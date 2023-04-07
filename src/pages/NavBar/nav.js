@@ -19,8 +19,8 @@ function NavBar() {
             </a>
             <nav className={styles.nav}>
                 <a href="" class="nav-link">Inicio</a>
-                <a href="" class="nav-link">Codigos</a>
-                <a href="" class="nav-link">Contactos</a>
+                <a href="" class="nav-link">Contacto</a>
+                <a href="" class="nav-link">Mis proyectos</a>
             </nav>
         </header>
         );
