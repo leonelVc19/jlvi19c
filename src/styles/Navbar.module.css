@@ -1,0 +1,62 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;800;900&display=swap";
+
+.header {
+    font-family: Ubuntu;
+}
+
+
+
+.t {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    margin-left: 5px;
+
+}
+.t:hover {
+    transform: translateX(5px);
+    transition: 0.5s ease-in-out;
+}
+.header {
+    display: flex;
+    min-height: 90px ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(var(--callout-rgb), 0.5);
+    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+    border-radius: 5px;
+}
+.logo{
+    border-radius: 10%;
+}
+.logo img {
+    width:  60px;
+    height: 60px;
+    margin-right: 8px;
+}
+.nav a {
+    font-weight: 600;
+    padding-right: 15px;
+
+}
+
+.nav a:hover {
+    color: tomato;
+}
+
+@media (max-width: 680px ) {
+    .header {
+        flex-direction: column;
+
+    }
+    .nav {
+        padding: 10px 0px;
+    }
+}
