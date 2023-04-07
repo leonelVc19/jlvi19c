@@ -1,7 +1,12 @@
 import styles from '@/styles/Navbar.module.css';
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function NavBar() {
+    const router = useRouter();
+
+
     return(
         <header className={styles.header}>
             <a className={styles.t} href="https://www.facebook.com/juanleonel.vazqueziglesias.5/"
@@ -19,8 +24,8 @@ function NavBar() {
             </a>
             <nav className={styles.nav}>
                 <a href="" class="nav-link">Inicio</a>
-                <a href="" class="nav-link">Codigos</a>
-                <a href="" class="nav-link">Contactos</a>
+                <a href="" class="nav-link">Contacto</a>
+                <a href="" class="nav-link">Mis proyectos</a>
             </nav>
         </header>
         );
