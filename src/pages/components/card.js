@@ -8,59 +8,58 @@ function Card() {
         
       <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://youtu.be/QNJxHWAiQSU"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
+            Mis Proyectos <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Find in-depth information about Next.js features and&nbsp;API.
+            En este apartado encontrara los proyectos que realice tanto en la escuela como en la pasantia.
           </p>
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://youtu.be/QNJxHWAiQSU"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Learn <span>-&gt;</span>
+            Mis Skills <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          Podrás ver mis habilidades, así como las herramientas que conozco y con las que trabaje.
           </p>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://youtu.be/QNJxHWAiQSU"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
+          Contactame <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
+            Podrás contactarme por medio de mis redes social o si bien gustas mi correo electronico.
           </p>
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://youtu.be/QNJxHWAiQSU"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
+            Ejemplos <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL
-            with&nbsp;Vercel.
+            Informacion de ejem
           </p>
         </a>
       </div>
