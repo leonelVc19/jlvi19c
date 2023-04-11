@@ -19,6 +19,9 @@
 .t:hover {
     transform: translateX(5px);
     transition: 0.5s ease-in-out;
+    padding: 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
 }
 .header {
     display: flex;
@@ -49,6 +52,11 @@
 
 .nav a:hover {
     color: tomato;
+}
+
+.titleLogo:hover {
+   
+    transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 680px ) {
