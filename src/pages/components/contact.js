@@ -6,8 +6,8 @@ function Contact() {
     return (
         <>
             <NavBar />
-            <p>Hola</p>
             <div className={styles.contact}>
+                <h1 className={styles.titulo}>Informacion de contacto</h1>
                 
                 <nav className={styles.lista}>
                     <ul className={styles.lista}>

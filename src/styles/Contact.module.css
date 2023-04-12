@@ -2,13 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
+    gap: 40px;
+    font-family: var(--font-mono);
 }
     .lista {
         position: relative;
         display: flex;
         gap: 25px;
-        font-family: var(--font-mono);
+        
     }
     .lista li {
         position: relative;
@@ -100,5 +103,9 @@
             justify-content: center;
             position: fixed;
             width: 100%;
+        }
+        .titulo {
+            text-align: center;
+            padding-bottom: 50px;
         }
     }
