@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css';
 import NavBar from './NavBar/nav';
 import Card from './components/card';
 import TextoJuan from './components/textJuan';
+import Footer from './components/Footer/footer';
 
 export default function Home() {
   return (
@@ -52,9 +53,7 @@ export default function Home() {
         <br></br>
         <TextoJuan></TextoJuan>
       </main>
-      <footer>
-        <p>hola</p>
-      </footer>
+      <Footer></Footer>
     </>
   )
 }
