@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <NavBar></NavBar>
       <main className={styles.main}>
-        <div className={styles.description}>
+        {/* <div className={styles.description}>
           <div className={styles.description}>
             <div>
               <a
@@ -38,7 +38,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.center}>
           <Image
             className={styles.logo}

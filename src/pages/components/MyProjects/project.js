@@ -21,12 +21,20 @@ function Project  () {
 
             <ComponentProject 
                 number="02" 
-                title="Card One" 
+                title="Gestion de perfiles RH" 
                 text="Este proyecto, fue desarrollado en el proceso
                 de estadia Enero-Abril del 2023, en el desarrollo del
                 proyecto conllevo conocer el Framework LitElement netamente a
                 componentes con JS. Este proyecto trataba sobre la administracion
                 de perfiles de la empresa Sit Digital Mexico."
+            ></ComponentProject>
+
+            <ComponentProject 
+                number="03" 
+                title="jlvi19c" 
+                text="La creacion de este sitio web, con la principal finalidad de dar a conocer 
+                mis conocimientos y habilidades que poco a poco se van mejorando. Ademas este sitio esta
+                construido totalmente en NextJS y CSS"
             ></ComponentProject>
         </section>
         </>
