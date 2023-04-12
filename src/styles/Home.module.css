@@ -215,7 +215,9 @@
   .content {
     padding: 4rem;
   }
-
+.infomacionC{
+  text-align: center;
+}
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -295,7 +297,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
- 
 
   .logo,
   .thirteen img {
