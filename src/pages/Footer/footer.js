@@ -1,6 +1,7 @@
 import styles from '@/styles/Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { socialNetworks } from '/public/data/socialNetwork';
 
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
                                 alt="JLVI19C"
                                 className={styles.footer_logo_img}
                                 width={70}
-                                height={40}
+                                height={70}
                             />
                             <p>JLVI19C</p>
                         </Link>
@@ -23,15 +24,11 @@ function Footer() {
                             Hola esta es mi web <br></br> checa mis proyectos.
                         </p>
                         <div className={styles.footer_social}>
-                            <a href="https://www.facebook.com/" target="_blank" className={styles.footer_social_link}>
-                                <p className={styles.bx}>ALGO</p>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" className={styles.footer_social_link}>
-                                <p className={styles.bx}>ALGO</p>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" className={styles.footer_social_link}>
-                                <p className={styles.bx}>ALGO</p>
-                            </a>
+                            {socialNetworks.map(social => <>
+                                        <a href={social.url} target="_blank" className={styles.footer_social_link}>
+                                        <Image  src={social.imagen} width={25} height={25} alt={social.title}/>
+                                    </a>
+                            </>)}
                         </div>
                     </div>
                     <div className={styles.footer_content}>

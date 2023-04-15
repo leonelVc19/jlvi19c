@@ -1,9 +1,6 @@
 import styles from '@/styles/Navbar.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 function NavBar() {
-    const router = useRouter();
 
 
     return(
@@ -13,11 +10,12 @@ function NavBar() {
             </Link>
             <nav className={styles.nav}>
                 <Link href="/" className="nav-link">Inicio</Link>
-                <Link href="/components/contact" className="nav-link"> Contacto</Link>
+                <Link href="/components/contact" className="nav-link">Contacto</Link>
                 <Link href="/components/MyProjects/project" className="nav-link">Mis proyectos</Link>
+                <Link href="/components/skills/skill" className="nav-link">Acerca de</Link>
             </nav>
         </header>
-        );
+    );
 };
 
 export default NavBar;
