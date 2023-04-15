@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -7,10 +8,9 @@ function Card() {
     return(
         
       <div className={styles.grid}>
-        <a
-          href="https://youtu.be/QNJxHWAiQSU"
+        <Link
+          href="/components/MyProjects/project"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
@@ -19,12 +19,11 @@ function Card() {
           <p className={inter.className}>
             En este apartado encontrara los proyectos que realice tanto en la escuela como en la pasantia.
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="https://youtu.be/QNJxHWAiQSU"
+        <Link
+          href="/components/skills/skill"
           className={styles.card}
-          target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
@@ -33,10 +32,10 @@ function Card() {
           <p className={inter.className}>
           Podrás ver mis habilidades, así como las herramientas que conozco y con las que trabaje.
           </p>
-        </a>
+        </Link>
 
-        <a
-          href="https://youtu.be/QNJxHWAiQSU"
+        <Link
+          href="/components/contact"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -47,7 +46,7 @@ function Card() {
           <p className={inter.className}>
             Podrás contactarme por medio de mis redes social o si bien gustas mi correo electronico.
           </p>
-        </a>
+        </Link>
 
         <a
           href="https://youtu.be/QNJxHWAiQSU"

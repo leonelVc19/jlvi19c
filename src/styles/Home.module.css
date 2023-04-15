@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: var(--font-mono);
 }
 
 .description {
@@ -118,15 +119,9 @@
 }
 
 @keyframes moverlogo {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 18px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 
@@ -184,11 +179,49 @@
   transition: 0.5s ease-in-out;
 }
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: 0.5s ease-in-out;
 }
+.informacion_cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
 
-/* Enable hover only on non-touch devices */
+.informacion_cv_text{
+  font-size: 2rem;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 24ch;
+  animation: typing 2s steps(24), blink .5s infinite step-end alternate ;
+  overflow: hidden;
+}
+.informacion_cv_link{
+  padding: 11px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.5);
+  border: solid 1px rgba(131, 0, 254, 0.5);
+  background: linear-gradient(45deg, #0195ff, #0ee7fa);
+  transition: 0.5s ease-in-out;
+
+}
+.informacion_cv_link:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+}
+/*Keyframe to text machine* */
+@keyframes typing {
+  from {width: 0;}
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Enable hover only on non-touch devices*/
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -215,9 +248,9 @@
   .content {
     padding: 4rem;
   }
-.infomacionC{
-  text-align: center;
-}
+  .infomacionC{
+    text-align: center;
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -273,6 +306,12 @@
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
+  .informacion_cv_text{
+    font-size: 1rem;
+  }
+  .informacion_cv_link{
+    font-size: 0.8rem;
+  }
 
   .description div {
     align-items: flex-end;
@@ -301,14 +340,5 @@
   .logo,
   .thirteen img {
     filter:  drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
