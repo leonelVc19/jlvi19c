@@ -6,7 +6,6 @@ import Card from './components/card';
 import TextoJuan from './components/textJuan';
 import './Footer/footer';
 import Link from 'next/link';
-import Button from './components/components/Button';
 
 export default function Home() {
 
