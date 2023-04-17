@@ -6,15 +6,17 @@ import Card from './components/card';
 import TextoJuan from './components/textJuan';
 import './Footer/footer';
 import Link from 'next/link';
+import Button from './components/components/Button';
 
 export default function Home() {
+
   return (
     <>
       <Head>
         <title>jlvi19C</title>
         <meta name="description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logojuan.png" />
+        <link rel="icon" href="/jlvi_icon_web.svg" />
       </Head>
       <main className={styles.main}>
         {/* <div className={styles.description}>
@@ -41,10 +43,10 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/logojuan.png"
+            src="/juan.svg"
             alt="Logo JLVI19C"
-            width={150}
-            height={150}
+            width={130}
+            height={130}
             priority
           />
         </div>
@@ -55,6 +57,7 @@ export default function Home() {
         <div className={styles.informacion_cv}>
           <span className={styles.informacion_cv_text}>Juan Leonel Vazquez Iglesias</span>
           <Link  className={styles.informacion_cv_link}href="/components/mycv/juan_cv">Ver Curriculum Vitae</Link>
+          
         </div>
       </main>
     </>

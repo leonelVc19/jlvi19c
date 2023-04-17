@@ -94,17 +94,18 @@
   font-size: 0.89rem;
   margin-top: 4.5rem;
 }
+.footer_logo_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 @media (max-width: 707px) {
   .footer_container {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 15px;
    
   }
-  .footer_conten {
-    border: 1px solid red;
+  .footer_content {
     padding: 5px;
   }
 }

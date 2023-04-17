@@ -10,18 +10,19 @@ function Footer() {
             <footer className={styles.footer} >
                 <div className={styles.footer_container}>
                     <div className={styles.footer_content}>
+                      
                         <Link href="/" className={styles.footer_logo}>
                             <Image 
-                                src="/logojuan.png"
+                                src="/juan.svg"
                                 alt="JLVI19C"
                                 className={styles.footer_logo_img}
-                                width={70}
-                                height={70}
+                                width={50}
+                                height={50}
                             />
                             <p>JLVI19C</p>
                         </Link>
                         <p className={styles.footer_description}>
-                            Hola esta es mi web <br></br> checa mis proyectos.
+                            Hola esta es mi web checa mis proyectos.
                         </p>
                         <div className={styles.footer_social}>
                             {socialNetworks.map(social => <>
@@ -31,6 +32,8 @@ function Footer() {
                             </>)}
                         </div>
                     </div>
+
+
                     <div className={styles.footer_content}>
                         <h3 className={styles.footer_title}>Contactame</h3>
                         <ul className={styles.footer_links}>
