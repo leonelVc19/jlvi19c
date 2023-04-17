@@ -11,6 +11,7 @@ function SkillComponent({title, image, url}) {
                         alt={title}
                         width={50}
                         height={50}
+                        className={styles.imagen}
                     />
                     <h5>{title}</h5>
                 </div>

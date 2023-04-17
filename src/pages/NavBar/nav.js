@@ -9,10 +9,12 @@ function NavBar() {
                 <h2 className={styles.titleLogo}>JLVI19C</h2> 
             </Link>
             <nav className={styles.nav}>
-                <Link href="/" className="nav-link">Inicio</Link>
-                <Link href="/components/contact" className="nav-link">Contacto</Link>
-                <Link href="/components/MyProjects/project" className="nav-link">Mis proyectos</Link>
-                <Link href="/components/skills/skill" className="nav-link">Acerca de</Link>
+                <div className={styles.nav_link}>
+                    <Link href="/" >Inicio</Link>
+                </div>
+                <Link href="/components/contact" className={styles.nav_link}>Contacto</Link>
+                <Link href="/components/MyProjects/project" className={styles.nav_link}>Mis proyectos</Link>
+                <Link href="/components/skills/skill" className={styles.nav_link}>Acerca de</Link>
             </nav>
         </header>
     );
