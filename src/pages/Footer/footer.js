@@ -10,7 +10,6 @@ function Footer() {
             <footer className={styles.footer} >
                 <div className={styles.footer_container}>
                     <div className={styles.footer_content}>
-                      
                         <Link href="/" className={styles.footer_logo}>
                             <Image 
                                 src="/juan.svg"
@@ -22,7 +21,7 @@ function Footer() {
                             <p>JLVI19C</p>
                         </Link>
                         <p className={styles.footer_description}>
-                            Hola esta es mi web checa mis proyectos.
+                            Hola, esta es mi web, mira mis proyectos.
                         </p>
                         <div className={styles.footer_social}>
                             {socialNetworks.map(social => <>
@@ -38,13 +37,13 @@ function Footer() {
                         <h3 className={styles.footer_title}>Contactame</h3>
                         <ul className={styles.footer_links}>
                             <li>
-                                <a href="#" className={styles.footer_link}>LinkedIn</a>
+                                <Link href="/components/skills/skill" className={styles.footer_link}>Mi habilidades</Link>
                             </li>
                             <li>
-                                <a href="#" className={styles.footer_link}>Whatsapp</a>
+                                <Link href="/components/mycv/juan_cv" className={styles.footer_link}>Mi CV</Link>
                             </li>
                             <li>
-                                <a href="#" className={styles.footer_link}>Email</a>
+                                <Link href="/components/about/about" className={styles.footer_link}>Acerca de</Link>
                             </li>
                             
                         </ul>
@@ -53,13 +52,13 @@ function Footer() {
                         <h3 className={styles.footer_title}>Mis Proyectos</h3>
                         <ul className={styles.footer_links}>
                             <li>
-                                <a href="#" className={styles.footer_link}>Candy App</a>
+                                <a href="https://calculatortestjlvi.netlify.app/" target="_blank" className={styles.footer_link}>Candy App</a>
                             </li>
                             <li>
-                                <a href="#" className={styles.footer_link}>Gestion de perfiles RH</a>
+                                <a href="https://el-juanchis.netlify.app/" target="_blank" className={styles.footer_link}>Gestion de perfiles RH</a>
                             </li>
                             <li>
-                                <a href="#" className={styles.footer_link}>jlvi19C</a>
+                                <Link href="/" className={styles.footer_link}>jlvi19C</Link>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +66,7 @@ function Footer() {
                         <h3 className={styles.footer_title}>Contacto directo</h3>
                         <ul className={styles.footer_links}>
                             <li>
-                                <a href="#" className={styles.footer_link}>+52-243-121-9195</a>
+                                <a href="https://wa.me/522431219195?text=Hola+Juan+Leonel%21" target='_blank' className={styles.footer_link}>+52-243-121-9195</a>
                             </li>
                         </ul>
                     </div>

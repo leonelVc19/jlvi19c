@@ -6,20 +6,27 @@ function Contact() {
     return (
         <>
             <div className={styles.contact}>
-                <h1 className={styles.titulo}>Informacion de contacto</h1>
+                <div className={styles.center}>
+                    <h1 className={styles.titulo}>Información de contacto</h1>
+                    <p>
+                        Por medio de mis redes sociales, podrás contactarme o enviarme mensaje. También puedes enviar algún mensaje a mí, número telefónico y/o correo electrónico
+                    </p>
+                    <nav className={styles.lista}>
+                        <ul className={styles.lista}>
+                            {socialNetworks.map(social => <>
+                                <ContactComponent 
+                                    titulo={social.titulo} 
+                                    imagen={social.imagen} 
+                                    url={social.url}
+                                />
+                                </>
+                            )}
+                        </ul>
+                    </nav>
+
+                </div>
                 
-                <nav className={styles.lista}>
-                    <ul className={styles.lista}>
-                        {socialNetworks.map(social => <>
-                            <ContactComponent 
-                                titulo={social.titulo} 
-                                imagen={social.imagen} 
-                                url={social.url}
-                            />
-                            </>
-                        )}
-                    </ul>
-                </nav>
+                
             </div>
         </>
     );

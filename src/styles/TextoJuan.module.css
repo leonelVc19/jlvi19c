@@ -4,19 +4,19 @@
     font-size: 4em;
     font-weight: bold;
     color: #222;
-   
     letter-spacing: 5px;
     cursor: pointer;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
 
   }
   .iluminado span {
-    text-transform:lowercase;
+    text-transform: lowercase;
     transition: 0.5s ease-in-out;
   }
   .iluminado:hover span {
     color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff, 0 0 160px #fff;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+    letter-spacing: 3px;
     transition: 0.5s ease-in-out;
 
   }
@@ -31,12 +31,12 @@
   }
   .iluminado:hover {
     color: rgb(1, 242, 255);
-    transition: 0.8s ease-in-out;
-    text-shadow: 0 0 10px rgb(1, 242, 255), 0 0 20px rgb(1, 242, 255), 0 0 40px rgb(1, 242, 255);
+    transition: 0.5s ease-in-out;
+    text-shadow: 0 0 10px rgb(1, 242, 255), 0 0 20px rgb(1, 242, 255);
   }
   
   @media (max-width: 700px) {
     .iluminado {
       font-size: 1em;
     }
-  }/*# sourceMappingURL=style.css.map */
+  }

@@ -53,14 +53,12 @@
   animation: floating 4s ease-in-out infinite;
 }
 
-.footer_social_link:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease-in-out;
-
-}
 
 .footer_social_link:hover {
-  background: linear-gradient(45deg, #10b3f9, #1c4cfa);
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 255, 234, 0.5);
+  border: solid 1px rgba(85, 84, 85, 0.5);
+  background: linear-gradient(45deg, #0195ff, #0ee7fa);
   transition: 0.3s ease-in-out;
 }
 
@@ -73,6 +71,7 @@
 .footer_links {
   display: grid;
   row-gap: 0.35rem;
+  list-style: none;
 }
 
 .footer_link {
@@ -83,9 +82,10 @@
 
 .footer_link:hover {
   color: hsl(14, 4%, 100%);
-  transform: scale(1.5);
-  background: red;
-  transition: 0.3s ease-in-out;
+  transform: translateX(5px);
+  filter: drop-shadow(0 4px 3px rgb(156, 152, 152));
+  letter-spacing: 1px;
+  transition: 0.4s ease-in-out;
 }
 
 .footer_copy {
