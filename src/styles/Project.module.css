@@ -8,6 +8,17 @@
   min-height: 100vh;
   font-family: var(--font-mono);
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.text {
+  padding: 20px;
+}
 .text h1 {
   padding-bottom: 5px;
 }
@@ -18,8 +29,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    padding: 2px 0;
     flex-wrap: wrap;
 }
 .container .card {

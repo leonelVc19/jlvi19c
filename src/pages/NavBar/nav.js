@@ -12,9 +12,9 @@ function NavBar() {
                 <div className={styles.nav_link}>
                     <Link href="/" >Inicio</Link>
                 </div>
-                <Link href="/components/contact" className={styles.nav_link}>Contacto</Link>
-                <Link href="/components/MyProjects/project" className={styles.nav_link}>Mis proyectos</Link>
-                <Link href="/components/skills/skill" className={styles.nav_link}>Acerca de</Link>
+                <Link href="/components/contact" className={styles.nav_link}>Contactame</Link>
+                <Link href="/components/projects/project" className={styles.nav_link}>Mis proyectos</Link>
+                <Link href="/components/about/about" className={styles.nav_link}>Acerca de</Link>
             </nav>
         </header>
     );

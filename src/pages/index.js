@@ -18,27 +18,6 @@ export default function Home() {
         <link rel="icon" href="/jlvi_icon_web.svg" />
       </Head>
       <main className={styles.main}>
-        {/* <div className={styles.description}>
-          <div className={styles.description}>
-            <div>
-              <a
-                href="https://github.com/leonelVc19"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Por{' Juan Leonel!!'}
-                <Image
-                  src="/logojuan.png"
-                  alt="JLVI19C"
-                  className={styles.logoJuan}
-                  width={70}
-                  height={40}
-                  priority
-                />
-              </a>
-            </div>
-          </div>
-        </div> */}
         <div className={styles.center}>
           <Image
             className={styles.logo}

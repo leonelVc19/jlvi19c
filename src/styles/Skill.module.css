@@ -1,24 +1,38 @@
 .containerSkils {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 40px;
-    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
     min-height: 100vh;
     font-family: var(--font-mono);
     background: linear-gradient(100deg, #101010, #17b7ed);
     background-image: url('../../public/komi.jpg'); 
     background-size: cover;
-    
 }
-
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 4rem 0;
+    top: 2rem;
+}
 .containerSkils_title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    margin:15px;
+    box-shadow: inset 0 5px 5px rgba(161, 161, 161, 0.4);
+    backdrop-filter: blur(5px);
+}
+.containerSkils_title h1 {
+    text-align: center;
+    filter: drop-shadow(0 4px 3px rgb(12, 0, 0));
 }
 .content {
     display: flex;
@@ -26,6 +40,7 @@
     align-items: center;
     gap: 40px;
     transition: 0.5s ease-in-out;
+    padding: 1rem;
 
 }
 .content_text {
@@ -48,6 +63,8 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 50%;
+    padding: 1rem;
+
 }
 .container {
     padding: 10px;
@@ -89,6 +106,9 @@
     }
     .containerSkils h1{
         padding: 5px;
+    }
+    .center {
+        top: 6rem;
     }
     .containerSkils p {
         text-align: center;

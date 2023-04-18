@@ -188,6 +188,7 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
+  
 }
 
 .informacion_cv_text{
@@ -196,6 +197,7 @@
   white-space: nowrap;
   border-right: 4px solid;
   width: 24ch;
+  /*filter: drop-shadow( 0 2px 3px rgb(228, 228, 228));*/
   animation: typing 2s steps(24), blink .5s infinite step-end alternate ;
   overflow: hidden;
 }
