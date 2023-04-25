@@ -9,7 +9,7 @@ function Card() {
         
       <div className={styles.grid}>
         <Link
-          href="/components/MyProjects/project"
+          href="/components/projects/project"
           className={styles.card}
           rel="noopener noreferrer"
         >
