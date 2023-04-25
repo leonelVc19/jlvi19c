@@ -1,8 +1,10 @@
 import "@/pages"
 import styles from '@/styles/Project.module.css';
-import ComponentProject from '../components/ComponentProject';
+import { projects } from '../../../../public/data/myProjects';
+import Link from "next/link";
 
 function Project  () {
+    console.log(projects);
     return (
         <>
             <section className={styles.section}>
@@ -15,33 +17,32 @@ function Project  () {
 
                     </div>
                     <div  className={styles.container}>
-
-                        <ComponentProject 
-                            number="01" 
-                            title="Candy App" 
-                            text="Aplicacion movil creada para resolver un problema
-                            administrativo de mercancia, en el municipio de izucar 
-                            de matamoros. Principal desarrollo con ReactNative, Expo, 
-                            JS, CSS, Animations, Firebase."
-                        ></ComponentProject>
-
-                        <ComponentProject 
-                            number="02" 
-                            title="Gestion de perfiles RH" 
-                            text="Este proyecto, fue desarrollado en el proceso
-                            de estadia Enero-Abril del 2023, en el desarrollo del
-                            proyecto conllevo conocer el Framework LitElement netamente a
-                            componentes con JS. Este proyecto trataba sobre la administracion
-                            de perfiles de la empresa Sit Digital Mexico."
-                        ></ComponentProject>
-
-                        <ComponentProject 
-                            number="03" 
-                            title="jlvi19c" 
-                            text="La creacion de este sitio web, con la principal finalidad de dar a conocer 
-                            mis conocimientos y habilidades que poco a poco se van mejorando. Ademas este sitio esta
-                            construido totalmente en NextJS y CSS"
-                        ></ComponentProject>
+                        {
+                            projects.map(project => 
+                            <>
+                                <div className={styles.card}>
+                                    <div className={styles.box}>
+                                        <div className={styles.content}>
+                                            <h2>{project.id}</h2>
+                                            <h3>{project.title}</h3>
+                                            <p>{project.text}</p>
+                                            <Link  href={{
+                                                pathname: '/components/projects/my_projects',
+                                                query: { 
+                                                    id: project.id,
+                                                    title: project.title,
+                                                    text: project.text,
+                                                    img: project.images
+                                                },
+                                            }}>
+                                            Más Información
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </> 
+                            )
+                        }
                     </div>
                 </div>
             </section>
