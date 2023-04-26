@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 6rem;
     min-height: 100vh;
     text-align: center;
     font-family: var(--font-mono);
@@ -15,7 +15,169 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
-    padding: 4rem 0;
+    padding: 6rem 0;
+    background: radial-gradient(circle at top right, #850eed, #06c3fd);
+    border-radius: 10px;
+    
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* box-shadow: inset 10px 5px 18px rgba(0, 0, 0, 0.7), 6px 0 10px rgba(255, 255, 255, 0.3); */
+
+}
+.texts {
+    padding: 5px;
+    border-radius: 15px;
+    width: 80%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    
+}
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.photo{ 
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+}
+.photo:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+.imgBox{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+
+}
+.contentTex{
+    position: absolute;
+    bottom: -162px;
+    width: 150%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    transition: bottom 0.5s ease-in-out;
+    transition-delay: 0.8s;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    box-shadow: 0 -10px -10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contentBox{
+    transition: 0.5s ease-in-out;
+}
+
+.photo .card .contentTex .contentBox h3 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0 15px;
+    line-height: 1em;
+    transition: 0.5s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition-delay: 0.6s ;
+}
+.photo .card .contentTex .contentBox h3 span {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: initial;
+    transition: 0.5s ease-in-out;
+}
+.photo .card .contentTex .sci {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+.sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+.photo .card .contentTex .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * 1);
+}
+.photo .card .contentTex .sci li a {
+    color: #fff;
+    font-size: 10px;
+}
+.photo .card .contentTex .sci li a:hover {
+    color: var(--c);
+    transition: 0.5s ease-in-out;
+}
+.photo .card .contentTex .sci li:hover {
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+.photo .card:hover .contentTex {
+    bottom: 0px;
+    transition: 0s ease-in-out;
+
+}
+.photo .card:hover .contentTex .contentBox h3 {
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.photo .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.myphoto {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(10, 230, 255, 0.16);
+}
+.texts h1 {
+    padding: 5px;
+    letter-spacing: 1px;
 }
 .imagenes{
     display: flex;
@@ -46,6 +208,15 @@
     opacity: 1;
 }
 @media (max-width: 707px) {
+    .texts h1 {
+        font-size: 1.4rem;
+    }
+    .main{
+        padding-top: 8rem;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
     .imagen {
         width: 40px;
         height: 70px;

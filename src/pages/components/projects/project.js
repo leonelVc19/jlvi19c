@@ -4,7 +4,6 @@ import { projects } from '../../../../public/data/myProjects';
 import Link from "next/link";
 
 function Project  () {
-    console.log(projects);
     return (
         <>
             <section className={styles.section}>
