@@ -2,12 +2,12 @@ import styles from '@/styles/TextoJuan.module.css';
 function TextoJuan() {
     return(
         <h2 className={styles.iluminado}>
-            <span>canela</span>
+            <span>dev</span>
             <a href="https://github.com/leonelVc19" target="_blank">
-                JLVI19C
+                IglesiasJLV
             </a>
-            <span>canela</span>
-        </h2> 
+            <span>dev</span>
+        </h2>
     );
 };
 

@@ -3,11 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
+  padding-top: 6rem;
   min-height: 100vh;
   font-family: var(--font-mono);
 }
-
+.main_presentation_text{
+  padding-top: 5rem;;
+}
 .description {
   display: inherit;
   justify-content: inherit;
@@ -201,20 +204,6 @@
   animation: typing 2s steps(24), blink .5s infinite step-end alternate ;
   overflow: hidden;
 }
-.informacion_cv_link{
-  padding: 11px;
-  border-radius: 5px;
-  border: solid 1px rgba(0, 166, 255, 0.5);
-  transition: 0.5s ease-in-out;
-
-}
-.informacion_cv_link:hover {
-  cursor: pointer;
-  background: linear-gradient(45deg, #0195ff, #0ee7fa);
-  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.5);
-  transform: translateY(-5px);
-  transition: 0.5s ease-in-out;
-}
 /*Keyframe to text machine* */
 @keyframes typing {
   from {width: 0;}
@@ -248,7 +237,10 @@
 /* Mobile */
 @media (max-width: 700px) {
   .content {
-    padding: 4rem;
+    padding: 2rem;
+  }
+  .main_presentation {
+    padding-top: 8rem;
   }
   .infomacionC{
     text-align: center;

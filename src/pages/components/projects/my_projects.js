@@ -2,17 +2,20 @@ import '@/pages';
 import styles from '@/styles/MyProjects.module.css';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import  * as React from 'react';
 
 const MyProjects = () => {
-    
+
     const router = useRouter();
     const  { query: {id, title, text, img}} = router;
     const props = { id, title, text, img };
-    //guardando de imagenes
+    //guardando las imagenes
     const images = props.img;
     return (
         <div className={styles.main}>
-
+            <div className={styles.main_title}>
+                <h2>Mis proyectos</h2>
+            </div>
             <div className={styles.content}>
                 
                 <div className={styles.main_content_text}>
@@ -26,15 +29,17 @@ const MyProjects = () => {
                 </div>
                 <div className={styles.main_content_img}>
                 {
-                        images ? images?.map(img => <>
-                            <div  className={styles.img}>
+                        images ? images?.map((img, index) => <>
+                            <div  className={styles.img} key={index}>
                                 <Image
                                     src={img}
                                     alt={props.title}
                                     width={400}
                                     height={150}
                                     className={styles.img_project}
+                                    priority
                                 />
+                                <p>{index+1}</p>
                             </div>
                         </>)
                         : 'Sin Imágenes'

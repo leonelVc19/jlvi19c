@@ -179,40 +179,19 @@
     padding: 5px;
     letter-spacing: 1px;
 }
-.imagenes{
-    display: flex;
-}
-.imagen {
-    flex-grow: 1px;
-    opacity: .4;
-    width: 70px;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    border-radius: 5px;
-}
-
-.imagen:hover {
-    cursor: pointer;
-    width: 200px;
-    opacity: 4;
-    filter: contrast(120%);
-    transform: scale(1.1);
-    z-index: 500;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.6);
-    transition: 0.5s ease-in-out;
-}
-.img p {
-    opacity: 0;
-}
-.img p:hover {
-    opacity: 1;
-}
 @media (max-width: 707px) {
+    .texts {
+        width: 95%;
+    }
     .texts h1 {
         font-size: 1.4rem;
     }
     .main{
-        padding-top: 8rem;
+        padding: 1rem;
+        padding-top: 9.7rem;
+    }
+    .center {
+        padding: 1rem 0;
     }
     .content {
         flex-wrap: wrap;

@@ -1,0 +1,15 @@
+
+.informacion_cv_link{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 106, 255, 0.5);
+    transition: 0.3s ease-in-out;
+
+}
+.informacion_cv_link:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #0195ff, #0ee7fa);
+    box-shadow: 0 5px 15px rgba(0, 247, 255, 0.5);
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
