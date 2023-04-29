@@ -23,7 +23,7 @@ export default function Home() {
           <div className={styles.main_presentation_text}>
             <h1>Hola, Soy Juan L. Vazquez Iglesias</h1>
             <h3>Ing. en Desarrollo y Gestión Software</h3>
-            <p>Soy desarrollador web en buscan de experiencia. Tengo habilidades destacadas para trabajar en equipo y disfruto siendo autodidacta para continuar aprendiendo sobre diversas tecnologías, especialmente en el desarrollo de software Frontend, Backend y aplicaciones móviles. Estoy siempre dispuesto a aprender algo nuevo cada día y abierto a nuevas experiencias.</p>
+            <p>Soy desarrollador web en buscan de experiencia. Tengo habilidades destacadas para trabajar en equipo y disfruto siendo autodidacta para continuar aprendiendo sobre diversas tecnologías, especialmente en el desarrollo de software Frontend, Backend y aplicaciones móviles.</p>
             <div>
               <button onClick={() => alert('Aun en desarrollo...')}>Hola</button>
               <button onClick={() => alert('Que aún sigue en desarrollo XD')}>Hola</button>
