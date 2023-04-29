@@ -13,7 +13,7 @@ export const projects = [
     },
     {
         id: 3,
-        title: "JuanIglesias",
+        title: "Iglesias JLV",
         text: "La creación de este sitio web, con la principal finalidad de dar a conocer mis conocimientos y habilidades que poco a poco se van mejorando. Además, este sitio está construido totalmente en NextJS.",
         images: ['/img_readme/iglesias.jpg', '/projects/iglesias_dev/about.jpg']
     }  

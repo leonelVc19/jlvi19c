@@ -10,7 +10,7 @@ function About() {
         <div className={styles.main}>
             <div className={styles.center}>
                 <div className={styles.texts}>
-                    <h1>Iglesias.dev</h1>
+                    <h1>Iglesias JLV</h1>
                     <div className={styles.content}>
                         <div className={styles.photo}>
                             <div className={styles.card}>
@@ -27,20 +27,39 @@ function About() {
                                         <div className={styles.contentBox}>
                                             <h3>Juan Iglesias <br></br> <span> Ing. DGS </span></h3>
                                         </div>
+                                        <br></br>
                                         <ul className={styles.sci}>
                                             <li>
-                                                <a href="#">
-                                                    red
+                                                <a href="https://github.com/leonelVc19" target='_blank'>
+                                                    <Image
+                                                        src='/icons/github.png'
+                                                        alt='Juan Iglesias'
+                                                        width={18}
+                                                        height={18}
+                                                        priority
+                                                    />
                                                 </a>
                                             </li>
                                             <li >
-                                                <a href="#">
-                                                    red
+                                                <a href="mailto: vazquez.juan.1fm@gmail.com" target='_blank'>
+                                                    <Image
+                                                        src='/icons/gmail.png'
+                                                        alt='Juan Iglesias'
+                                                        width={18}
+                                                        height={18}
+                                                        priority
+                                                    />
                                                 </a>
                                             </li>
                                             <li >
-                                                <a href="#">
-                                                    red
+                                                <a href="https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/" target='_blank'>
+                                                    <Image
+                                                        src='/icons/linkedin.png'
+                                                        alt='Juan Iglesias'
+                                                        width={18}
+                                                        height={18}
+                                                        priority
+                                                    />
                                                 </a>
                                             </li>
                                         </ul>
@@ -48,50 +67,11 @@ function About() {
                             </div>
                         </div>
                         <p>
-                            <strong>Juan Iglesias</strong> 
-                            es un desarrollador de software en busca de experiencia en el desarrollo de aplicación web y aplicaciones móviles y en camino a convertirse en desarrollador Full Stack con en el lenguaje de programación
+                            <strong>Juan L. Vazquez Iglesias, </strong>es un desarrollador de software en busca de experiencia en el desarrollo de aplicación web y aplicaciones móviles y en camino a convertirse en desarrollador Full Stack con en el lenguaje de programación
                             <strong> JavaScript.</strong>
                         </p>
                     </div>
-                    
                 </div>
-                <section className={styles.imagenes}>
-                    <Image src="/komi.jpg"
-                        className={styles.imagen}
-                        width={200}
-                        height={150}  
-                        alt="Komi1" 
-                    />
-                    <Image src="/komi.jpg"
-                        className={styles.imagen}
-                        width={200}
-                        height={150}  
-                        alt="Komi1" 
-                    /> 
-                    <Image src="/komi.jpg"
-                        className={styles.imagen}
-                        width={200}
-                        height={150}  
-                        alt="Komi1"
-                    /> 
-                    <Image src="/komi.jpg"
-                        className={styles.imagen}
-                        width={200}
-                        height={150}  
-                        alt="Komi1"
-                    />
-                    <Image src="/komi.jpg"
-                        className={styles.imagen}
-                        width={200}
-                        height={150}  
-                        alt="Komi1" 
-                    />
-                    <Image className={styles.imagen} src="/komi.jpg"
-                        width={200}
-                        height={150}  
-                        alt="Komi1" 
-                    />
-                </section>
             </div>
         </div>
     );

@@ -17,9 +17,9 @@ function Project  () {
                     </div>
                     <div  className={styles.container}>
                         {
-                            projects.map(project => 
+                            projects.map((project, index) => 
                             <>
-                                <div className={styles.card}>
+                                <div className={styles.card} key={index}>
                                     <div className={styles.box}>
                                         <div className={styles.content}>
                                             <h2>{project.id}</h2>

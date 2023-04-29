@@ -2,6 +2,7 @@ import styles from '@/styles/Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { socialNetworks } from '/public/data/socialNetwork';
+import { projects } from '../../../public/data/myProjects';
 
 
 function Footer() {
@@ -18,7 +19,7 @@ function Footer() {
                                 width={50}
                                 height={50}
                             />
-                            <p>Juan Iglesias</p>
+                            <p>IglesiasJLV</p>
                         </Link>
                         <p className={styles.footer_description}>
                             Hola, esta es mi web, mira mis proyectos.
@@ -51,15 +52,12 @@ function Footer() {
                     <div className={styles.footer_content}>
                         <h2 className={styles.footer_title}>Mis Proyectos</h2>
                         <ul className={styles.footer_links}>
-                            <li>
-                                <a href="https://calculatortestjlvi.netlify.app/" target="_blank" className={styles.footer_link}>Candy App</a>
-                            </li>
-                            <li>
-                                <a href="https://el-juanchis.netlify.app/" target="_blank" className={styles.footer_link}>Gestion de perfiles RH</a>
-                            </li>
-                            <li>
-                                <Link href="/" className={styles.footer_link}>jlvi19C</Link>
-                            </li>
+                            {projects?.map(project => <>
+                                    <li>
+                                        <Link href="/components/projects/project" className={styles.footer_link}>{project.title}</Link>
+                                    </li>
+                                </>)
+                            }
                         </ul>
                     </div>
                     <div className={styles.footer_content}>
@@ -71,7 +69,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <span className={styles.footer_copy}>&#169; JLVI19C</span>
+                <span className={styles.footer_copy}>&#169; JuanIglesias</span>
             </footer>
         </>
         
