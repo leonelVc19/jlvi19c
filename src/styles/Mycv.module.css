@@ -16,25 +16,20 @@
     font-family: var(--font-mono);
     
 }
-.container_cv_link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 30px;
-    border: 1px solid rgba(94, 96, 100, 0.8);
+
+.informacion_cv_link{
+    padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(94, 96, 100, 0.2);
-    transition: 0.5s ease-in-out;
+    border: solid 1px rgba(0, 106, 255, 0.5);
+    transition: 0.3s ease-in-out;
 
 }
-.container_cv_link:hover {
+.informacion_cv_link:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #0195ff, #0ee7fa);
+    box-shadow: 0 5px 15px rgba(0, 247, 255, 0.5);
     transform: translateY(-5px);
-    background: tomato;
-    transition: 0.5s ease-in-out;
-    border: 1px solid rgba(234, 236, 239, 0.8);
-    border-radius: 0px;
-    box-shadow: 0 5px 10px rgba(94, 96, 100, 0.5);
+    transition: 0.3s ease-in-out;
 }
 .cvjuan {
     border-radius: 10px;
