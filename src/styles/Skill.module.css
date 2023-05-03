@@ -6,10 +6,9 @@
     padding: 0rem;
     min-height: 100vh;
     font-family: var(--font-mono);
-    background: linear-gradient(100deg, #101010, #17b7ed);
-    background-image: url('../../public/komi.jpg'); 
-    background-size: cover;
-}
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,75,203,1) 35%, rgba(0,212,255,1) 100%);
+    }
 .center {
     display: flex;
     justify-content: center;
@@ -101,7 +100,6 @@
 
 @media (max-width: 907px) {
     .containerSkils {
-        background: linear-gradient(180deg, #101010, #17b7ed);
         transition: 0.5s ease-in-out;
     }
     .containerSkils h1{
