@@ -9,9 +9,9 @@ function Project  () {
             <section className={styles.section}>
                 <div className={styles.center}>
                     <div  className={styles.text}>
-                        <h1>Proyectos. En los que trabaje.</h1>
+                        <h1>Proyectos en los que he trabajado</h1>
                         <p>
-                        En este apartado podrás ver, los proyectos en los que he trabajado durante mi educación en la universidad, así como el trabajo realizado en la estadía técnica. Además de conocer mis trabajos y también en los que se sigue trabajando.
+                        En este apartado podrás ver los proyectos en los que he trabajado durante mi educación en la universidad, así como el trabajo realizado en la estadía técnica
                         </p>
 
                     </div>
