@@ -21,7 +21,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.main_presentation}>
           <div className={styles.main_presentation_text}>
-            <h1>Hola, Soy Juan L. Vazquez Iglesias</h1>
+            <h1 className={styles.informacion_cv_text}>Hola, Soy Juan Leonel Vazquez Iglesias.</h1>
             <h3>Ing. en Desarrollo y Gestión Software</h3>
             <p>Soy desarrollador web en buscan de experiencia. Tengo habilidades destacadas para trabajar en equipo y disfruto siendo autodidacta para continuar aprendiendo sobre diversas tecnologías, especialmente en el desarrollo de web Full-Stack</p>
             <div className={styles.buttons_index}>
@@ -45,7 +45,7 @@ export default function Home() {
         <TextoJuan></TextoJuan>
         <br></br>
         <div className={styles.informacion_cv}>
-          <span className={styles.informacion_cv_text}>Juan Leonel Vazquez Iglesias</span>
+         
           <Button title="Ver Curriculum Vitae" link="/components/mycv/juan_cv"></Button>
         </div>
       </main>
