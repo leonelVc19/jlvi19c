@@ -25,7 +25,7 @@ const MyProjects = () => {
                         <p>{props.text}</p>
                     </div>
                     <hr></hr>
-                    <p><strong>! Hola, soy Juan Iglesias! <br></br></strong> Espero te gusten mis proyectos!</p>
+                    <p><strong>! Hola, soy Juan Iglesias!</strong> Espero te gusten mis proyectos!</p>
                 </div>
                 <div className={styles.main_content_img}>
                 {
