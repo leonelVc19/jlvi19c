@@ -12,13 +12,12 @@ function Skill() {
             <section className={styles.containerSkils}>
                 <div className={styles.center}>
                     <div className={styles.containerSkils_title}>
-                        <h1>Mis Habilidades</h1>
-                        <p>En este apartado podras ver las habilidades con las que cuento</p>
+                        <h1>Skills</h1>
                     </div>
                     <div className={styles.content}>
                         <div className={styles.content_text}>
-                            <h1>Habilidades</h1>
-                            <p>Mostrando las tecnologías, que conozco y que aún sigo trabajado, durante mi educación en la universidad, así mismo como trabajos en otros lugares. Para el desarrollo Frontend y Backend. También para el desarrollo móvil .</p>
+                            <h1>Mis Skills</h1>
+                            <p>En esta sección podrás conocer mis habilidades y experiencia, para el desarrollo de apliciones web, en Frontend y Backend, como en el desarrollo móvil. A continuación, te mostraré las tecnologías que conozco y en las que he trabajado durante mi educación universitaria y en mis empleos anteriores.</p>
                         </div>
                         <div className={styles.contentSkills}>
                             {skills.map(skill =>  <>

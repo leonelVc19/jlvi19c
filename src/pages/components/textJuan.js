@@ -4,7 +4,7 @@ function TextoJuan() {
         <h2 className={styles.iluminado}>
             <span>dev</span>
             <a href="https://github.com/leonelVc19" target="_blank">
-                IglesiasJLV
+                JLVI
             </a>
             <span>dev</span>
         </h2>

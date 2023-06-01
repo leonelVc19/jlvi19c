@@ -2,6 +2,7 @@ import "@/pages"
 import styles from '@/styles/Project.module.css';
 import { projects } from '../../../../public/data/myProjects';
 import Link from "next/link";
+import Button from "../components/Button";
 
 function Project  () {
     return (
@@ -25,7 +26,7 @@ function Project  () {
                                             <h2>{project.id}</h2>
                                             <h3>{project.title}</h3>
                                             <p>{project.text}</p>
-                                            <Link  href={{
+                                            <Link className={styles.informacion_cv_link} href={{
                                                 pathname: '/components/projects/my_projects',
                                                 query: { 
                                                     id: project.id,
