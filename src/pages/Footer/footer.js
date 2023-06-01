@@ -19,7 +19,7 @@ function Footer() {
                                 width={50}
                                 height={50}
                             />
-                            <p>IglesiasJLV</p>
+                            <p>JLVI</p>
                         </Link>
                         <p className={styles.footer_description}>
                             Hola, esta es mi web, mira mis proyectos.
@@ -69,7 +69,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <span className={styles.footer_copy}>&#169; JuanIglesias</span>
+                <span className={styles.footer_copy}>&#169; JLVI</span>
             </footer>
         </>
         
