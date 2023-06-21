@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 5rem;
-    min-height: 100vh;
+    height: 100vh;
     font-family: var(--font-mono);
 }
 .container_cv{
@@ -35,8 +35,8 @@
     border-radius: 10px;
     box-shadow: 0 5px 12px rgba(94, 96, 100, 0.8);
     margin: 20px;
-    width: 500px;
-    height: 580px;
+    width: 550px;
+    height: 780px;
 }
 
 @media (max-width: 707px) {
@@ -44,7 +44,6 @@
         text-align: center;
         padding-top: 7.5rem;
     }
-
     .cvjuan{
         width: 300px;
         height: 380px;
