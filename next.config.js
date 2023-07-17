@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
+const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
 module.exports = {
+  reactStrictMode: true,
+  swcMinify: true,
+  optimizeFonts: true,
   images: {
-    domains: ['estars-test-j.s3.us-west-1.amazonaws.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: domain
+      }
+    ],
+    minimumCacheTTL: 1500000,
   },
 }
