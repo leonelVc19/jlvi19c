@@ -10,6 +10,7 @@ import Button from './components/components/Button';
 
 export default function Home() {
 
+  const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
   return (
     <>
       <Head>
@@ -32,7 +33,7 @@ export default function Home() {
           <div className={styles.center}>
             <Image
               className={styles.logo}
-              src="/juan.svg"
+              src={`https://${domain}/juan.svg`}
               alt="Logo JLVI19C"
               width={130}
               height={130}
@@ -51,4 +52,4 @@ export default function Home() {
       </main>
     </>
   )
-}
+};

@@ -16,7 +16,7 @@ function About() {
                             <div className={styles.card}>
                                     <div className={styles.imgBox}>
                                             <Image
-                                                src='/juan_iglesias.jpg'
+                                                src='https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan_Leonel_Vazquez_Iglesias.jpeg'
                                                 alt='Juan Iglesias'
                                                 width={500}
                                                 height={500}

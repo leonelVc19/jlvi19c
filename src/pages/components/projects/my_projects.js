@@ -5,11 +5,11 @@ import Image from 'next/image';
 import  * as React from 'react';
 
 const MyProjects = () => {
+    const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
 
     const router = useRouter();
     const  { query: {id, title, text, img}} = router;
     const props = { id, title, text, img };
-    //guardando las imagenes
     const images = props.img;
     return (
         <div className={styles.main}>
@@ -25,14 +25,14 @@ const MyProjects = () => {
                         <p>{props.text}</p>
                     </div>
                     <hr></hr>
-                    <p><strong>! Hola, soy Juan Iglesias!</strong> Espero te gusten mis proyectos!</p>
+                    <p><strong>!Hola, soy Juan Iglesias!</strong> Espero te gusten mis proyectos!</p>
                 </div>
                 <div className={styles.main_content_img}>
                 {
                         images ? images?.map((img, index) => <>
                             <div  className={styles.img} key={index}>
                                 <Image
-                                    src={img}
+                                    src={`https://${domain}/${img}`}
                                     alt={props.title}
                                     width={400}
                                     height={150}
