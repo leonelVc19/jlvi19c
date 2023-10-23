@@ -6,6 +6,11 @@ import Card from "./components/card";
 import TextoJuan from "./components/textJuan";
 import "./Footer/footer";
 import Button from "./components/components/Button";
+import JuanCv from "./components/mycv/juan_cv";
+import Skill from './components/skills/skill'
+import Contact from "./components/contact";
+import About from "./components/about/about";
+import MyProjects from "./components/projects/project";
 
 export default function Home() {
   const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
@@ -38,13 +43,17 @@ export default function Home() {
             <h1 className={styles.informacion_cv_text}>
               Hola, Soy Juan Leonel Vazquez Iglesias
             </h1>
-            <h3>Ing. en Desarrollo y Gestión Software</h3>
-            <p>
-              Soy desarrollador web en buscan de experiencia. Tengo habilidades
-              destacadas para trabajar en equipo y disfruto siendo autodidacta
-              para continuar aprendiendo sobre diversas tecnologías,
-              especialmente en el desarrollo de web Full-Stack
-            </p>
+          
+            <article className={styles.text_main}> 
+              <h3>Ing. en Desarrollo y Gestión Software</h3>
+              <p>  
+              
+                Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
+                destacadas para el trabajo en equipo, ademas que disfruto siendo autodidacta.
+              </p>
+            </article>
+            <br></br>
+            <br></br>
             <div className={styles.buttons_index}>
               <Button
                 title="Skills"
@@ -55,7 +64,7 @@ export default function Home() {
                 title="Contacto"
                 link="/components/contact"
                 onClick={() => alert("Aun en desarrollo...")}
-              ></Button>
+              ></Button>  
             </div>
           </article>
           <article className={styles.center}>
@@ -69,8 +78,14 @@ export default function Home() {
             />
           </article>
         </section>
-        <Card></Card>
+        <MyProjects></MyProjects>
         <br></br>
+        <JuanCv />
+        <hr></hr>
+        <Skill></Skill>
+        <hr></hr>
+        <Contact />
+        <hr></hr>
         <TextoJuan></TextoJuan>
         <br></br>
         <section className={styles.informacion_cv}>
@@ -79,6 +94,9 @@ export default function Home() {
             link="/components/mycv/juan_cv"
           ></Button>
         </section>
+        <hr></hr>
+        <About />
+        <hr></hr>
       </main>
     </>
   );
