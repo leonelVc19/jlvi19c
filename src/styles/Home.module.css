@@ -5,11 +5,11 @@
   align-items: center;
   min-height: 100vh;
   font-family: var(--font-mono);
+  
 }
 .main_presentation{
   display: flex; 
   width: 100%;
- 
   padding: 3rem; padding-top: 8rem;
   justify-content: center;
   background-image: url('../../public/development2.jpg');
@@ -19,11 +19,10 @@
 }
 .main_presentation_text{ 
   width: 50%;
-  padding-top: 3rem;
   display: flex;
   gap: 20px;
   flex-direction: column;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(20px);
   padding: 10px;
   border-radius: 10px;
 }
@@ -261,15 +260,21 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
   .content {
     padding: 2rem;
   }
   .main_presentation {
-    padding-top: 2rem;
+    padding-top: 10rem;
     flex-direction: column;
   }
   .main_presentation_text{
     width: 100%;
+  }
+  .buttons_index{
+    padding: 20px;
+    padding-top: 60px;
+
   }
   .center{
     width: 100%;

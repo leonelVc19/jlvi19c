@@ -52,6 +52,8 @@ export default function Home() {
                 destacadas para el trabajo en equipo, ademas que disfruto siendo autodidacta.
               </p>
             </article>
+            <br></br>
+            <br></br>
             <div className={styles.buttons_index}>
               <Button
                 title="Skills"
