@@ -82,8 +82,9 @@
 
 html,
 body {
-  max-width: 100vw;  
-  background-color: rgba(143, 143, 143, 0.687);
+  max-width: 100vw;
+  overflow-x: hidden;
+
 
 }
 ::-webkit-scrollbar{
