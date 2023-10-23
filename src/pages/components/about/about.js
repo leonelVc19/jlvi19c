@@ -1,8 +1,6 @@
 import '@/pages';
 import Image from 'next/image'
 import styles from '@/styles/About.module.css';
-import { Fragment, useState } from 'react';
-
 
 function About() {
     const perfil = 'https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/';

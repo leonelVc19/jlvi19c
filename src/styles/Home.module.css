@@ -3,34 +3,46 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  padding-top: 6rem;
   min-height: 100vh;
   font-family: var(--font-mono);
 }
 .main_presentation{
-  display: flex;
+  display: flex; 
+  width: 100%;
+ 
+  padding: 3rem; padding-top: 8rem;
   justify-content: center;
+  background-image: url('../../public/development2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom 0px right 0px ;
 }
-.main_presentation_text{
+.main_presentation_text{ 
   width: 50%;
   padding-top: 3rem;
   display: flex;
-  gap: 5px;
+  gap: 20px;
   flex-direction: column;
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  border-radius: 10px;
+}
+.text_main {
+  left: 50px;
+  top: 30px;
 }
 .buttons_index{
   display: flex;
   gap: 5px;
   padding: 5px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
 }
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
-  width: 100%;
+  width: 90%;
   z-index: 2;
   font-family: var(--font-mono);
 }
@@ -214,9 +226,8 @@
   white-space: nowrap;
   border-right: 4px solid;
   width: 33.7ch;
-  /*filter: drop-shadow( 0 2px 3px rgb(228, 228, 228));*/
+  filter: drop-shadow( 0 2px 3px rgb(92, 92, 92));
   animation: typing 2s steps(24), blink .5s infinite step-end alternate ;
-  overflow: hidden;
 }
 /*Keyframe to text machine* */
 @keyframes typing {

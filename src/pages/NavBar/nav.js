@@ -1,7 +1,8 @@
 import styles from '@/styles/Navbar.module.css';
 import Link from 'next/link';
-function NavBar() {
+import Button from "../components/components/Button";
 
+function NavBar() {
 
     return(
         <header className={styles.header}>
@@ -9,11 +10,16 @@ function NavBar() {
                 <h2 className={styles.titleLogo}>JLVI</h2> 
             </Link>
             <nav className={styles.nav}>
-                <div className={styles.nav_link}>
+                <Button
+                    title="Descargar CV"
+                    link="https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan+Leonel+Vazquez+Iglesias+CV.pdf"
+                    tart="_blank"
+                >
+                </Button>
+                <article className={styles.nav_link}>
                     <Link href="/" >Inicio</Link>
-                </div>
-                <Link href="/components/contact" className={styles.nav_link}>Contáctame</Link>
-                <Link href="/components/projects/project" className={styles.nav_link}>Mis proyectos</Link>
+                </article>
+                <Link href="#" className={styles.nav_link}>Mis proyectos</Link>
                 <Link href="/components/about/about" className={styles.nav_link}>Acerca de</Link>
             </nav>
         </header>

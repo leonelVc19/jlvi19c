@@ -28,7 +28,7 @@
 
 .nav {
     display: flex;
-    
+    gap: 1px;
 }
 
 
@@ -40,7 +40,6 @@
     padding-right: 15px;
     transition: 0.2s ease-in-out;
     filter: drop-shadow(0 2px 4px rgb(0, 0, 0));
-
 }
 
 .nav_link:hover {
@@ -48,7 +47,6 @@
     transform: scale(1.06);
     transition: 0.2s ease-in-out;
     filter: drop-shadow(1px 1px 3px #fff);
-
 }
 
 .titleLogo:hover {

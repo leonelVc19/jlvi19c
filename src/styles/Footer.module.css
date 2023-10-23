@@ -1,14 +1,32 @@
 
 .footer {
-  background: linear-gradient(5deg, #0d0c0c, #0e0c0c);
-  font-family: var(--font-mono);
+  font-family: Ubuntu;
+    box-shadow:  0 5px 58px rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    background-image: url('../../public/laptop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom 0px right 0px ;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+
 }
 .footer_container {
-  padding-top: 15px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 50px;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+.footer_container_logo {
+  display: block;
+  justify-content: space-around;
+
 }
 
 .footer_logo {
@@ -19,20 +37,34 @@
   margin-bottom: 1rem;
   font-weight: 500;
   color: hsl(14, 4%, 100%);
+  transition: ease-in-out 0.5s;
+
+}
+.footer_logo p {
+  transition: ease-in-out 0.5s;
+}
+.footer_logo p:hover {
+  text-shadow: 2px 5px 6px #ffffff;
+  transition: ease-in-out 0.5s;
+  letter-spacing: 1px;
 }
 
 .footer_logo_img {
+  transition: ease-in-out 0.5s;
   border-radius: 5px;
-  transition: 0.3s ease-in-out;
   box-shadow: inset 0 5px 15px rgba(114, 113, 113, .2);
+ 
 }
 
 .footer_logo_img:hover {
   transform: scale(1.1);
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out; 
+  box-shadow:  inset 0 5px 15px rgba(114, 113, 113, .2),0 5px 15px rgba(3, 70, 255, 0.5);
+
 }
 
 .footer_description {
+  text-shadow: 2px 3px 5px #000000;
   margin-bottom: 2.5rem;
 }
 
@@ -49,17 +81,16 @@
   border-radius: 0.25rem;  
   color: hsl(14, 4%, 100%);
   font-size: 1rem;
-  transition: 0.3s ease-in-out;
+  transition: ease-in-out 0.5s;
+
   animation: floating 4s ease-in-out infinite;
 }
-
-
 .footer_social_link:hover {
   border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 255, 234, 0.5);
-  border: solid 1px rgba(85, 84, 85, 0.5);
+  box-shadow: 0 5px 15px rgba(1, 230, 255, 0.5);
   background: linear-gradient(45deg, #0195ff, #0ee7fa);
-  transition: 0.3s ease-in-out;
+  transition: ease-in-out 0.2s;
+
 }
 
 .footer_title {
@@ -76,7 +107,7 @@
 
 .footer_link {
   font-size: .875rem;
-  color: hsl(180, 1%, 57%);
+  color: hsl(0, 0%, 100%);
   transition: 0.3s ease-in-out;
 }
 
@@ -86,6 +117,7 @@
   filter: drop-shadow(0 4px 3px rgb(156, 152, 152));
   letter-spacing: 1px;
   transition: 0.4s ease-in-out;
+  font-weight: bold;
 }
 
 .footer_copy {

@@ -16,5 +16,11 @@ export const projects = [
         title: "JLVI",
         text: "La creación de este sitio web, con la principal finalidad de dar a conocer mis conocimientos y habilidades que poco a poco se van mejorando. Además, este sitio está construido totalmente en NextJS.",
         images: ['img_projects/home_page.jpg', 'img_projects/my_projects.jpg']
+    },
+    {
+        id: 4,
+        title: "e-stars",
+        text: "Proyecto de NFTs.",
+        images: []
     }
 ];
