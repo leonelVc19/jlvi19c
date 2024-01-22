@@ -46,7 +46,7 @@ function Footer() {
             </section>
             <section>    
                 <span className={styles.footer_copy}>Portafolio &#169; 
-                    <strong>Juan Leonel Vazquez Iglesias</strong> 
+                    <strong className={styles.footer_copy_name}>Juan Leonel Vazquez Iglesias</strong> 
                 </span>
                 <br/>
             </section>

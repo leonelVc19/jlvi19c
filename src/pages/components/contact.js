@@ -2,6 +2,7 @@ import styles from '@/styles/Contact.module.css';
 import ContactComponent from './components/ContactComponent';
 import "@/pages";
 import { socialNetworks } from '../../../public/data/socialNetwork';
+
 function Contact() {
     return (
         <section className={styles.contact}>
@@ -14,14 +15,14 @@ function Contact() {
                 </p>
                 <article className={styles.lista}>
                     <ul className={styles.lista}>
-                        {socialNetworks.map(social => 
-                            <>
+                        {socialNetworks.map((social, index) => 
+                            <section key={index}>
                                 <ContactComponent 
                                     titulo={social.titulo} 
                                     imagen={social.imagen} 
                                     url={social.url}
                                 />
-                            </>
+                            </section>
                         )}
                     </ul>
                 </article>

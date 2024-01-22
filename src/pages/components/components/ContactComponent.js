@@ -4,7 +4,7 @@ import Image from 'next/image';
 function ContactComponent({imagen, url, titulo}) {
     return (
         <>
-            <li className={styles.lista}>
+            <li className={styles.lista} >
                 <span className={styles.icon}>
                     <Image 
                         src={imagen}
@@ -20,6 +20,7 @@ function ContactComponent({imagen, url, titulo}) {
                 </span>
             </li>
         </>
+
     ); 
 };
 

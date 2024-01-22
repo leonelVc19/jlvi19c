@@ -16,11 +16,11 @@
     gap: 15px;
     position: relative;
     padding: 6rem 0;
-    background: radial-gradient(circle at top right, #850eed, #06c3fd);
+    background: radial-gradient(circle at top right, #3f08e3, #3e00a1);
     border-radius: 10px;
     
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.36);
+    /* border: 1px solid rgba(255, 255, 255, 0.16); */
     /* box-shadow: inset 10px 5px 18px rgba(0, 0, 0, 0.7), 6px 0 10px rgba(255, 255, 255, 0.3); */
 
 }
@@ -91,7 +91,7 @@
     transition: bottom 0.5s ease-in-out;
     transition-delay: 0.8s;
     -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     box-shadow: 0 -10px -10px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
