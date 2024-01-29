@@ -3,24 +3,15 @@ import Image from 'next/image';
 
 function ContactComponent({imagen, url, titulo}) {
     return (
-        <>
-            <li className={styles.lista} >
-                <span className={styles.icon}>
-                    <Image 
-                        src={imagen}
-                        alt={titulo}
-                        className={styles.imagen}
-                        width={35}
-                        height={35}
-                        priority
-                    />
-                </span>
-                <span className={styles.title}>
-                    <a href={url} target="_blank" >{titulo}</a>
-                </span>
-            </li>
-        </>
-
+        <a href={url} target="_blank" className={styles.icon}>
+            <Image 
+                src={imagen}
+                alt={titulo}
+                width={30}
+                height={30}
+                priority
+            />
+        </a>
     ); 
 };
 

@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import "./NavBar/nav";
-import Card from "./components/card";
-import TextoJuan from "./components/textJuan";
 import "./Footer/footer";
 import Button from "./components/components/Button";
 import JuanCv from "./components/mycv/juan_cv";
@@ -49,7 +47,7 @@ export default function Home() {
               <p>  
               
                 Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
-                destacadas para el trabajo en equipo, ademas que disfruto siendo autodidacta.
+                para trabajar en equipo, ademas que disfruto siendo autodidacta.
               </p>
             </article>
             <br></br>
@@ -79,24 +77,10 @@ export default function Home() {
           </article>
         </section>
         <MyProjects></MyProjects>
-        <br></br>
         <JuanCv />
-        <hr></hr>
         <Skill></Skill>
-        <hr></hr>
         <Contact />
-        <hr></hr>
-        <TextoJuan></TextoJuan>
-        <br></br>
-        <section className={styles.informacion_cv}>
-          <Button
-            title="Ver Curriculum Vitae"
-            link="/components/mycv/juan_cv"
-          ></Button>
-        </section>
-        <hr></hr>
         <About />
-        <hr></hr>
       </main>
     </>
   );

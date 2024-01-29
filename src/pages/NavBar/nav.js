@@ -19,7 +19,7 @@ function NavBar() {
                 <article className={styles.nav_link}>
                     <Link href="/" >Inicio</Link>
                 </article>
-                <Link href="#" className={styles.nav_link}>Mis proyectos</Link>
+                <Link href="/" className={styles.nav_link}>Mis proyectos</Link>
                 <Link href="/components/about/about" className={styles.nav_link}>Acerca de</Link>
             </nav>
         </header>

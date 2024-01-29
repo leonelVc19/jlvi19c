@@ -3,12 +3,11 @@ import Image from 'next/image'
 import styles from '@/styles/About.module.css';
 
 function About() {
-    const perfil = 'https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/';
     return (
-        <section className={styles.main}>
+        <section >
             <section className={styles.center}>
                 <section className={styles.texts}>
-                    <section className={styles.content}>
+                    <section >
                         <article className={styles.photo}>
                             <div className={styles.card}>
                                     <article className={styles.imgBox}>
@@ -63,9 +62,12 @@ function About() {
                                     </section>
                             </div>
                         </article>
-                        <article>
-                            <strong>Juan L. Vazquez Iglesias, </strong>es un desarrollador de software en busca de experiencia en el desarrollo de aplicación web y aplicaciones móviles y en camino a convertirse en desarrollador Full Stack con en el lenguaje de programación
-                            <strong> JavaScript.</strong>
+                        <article className={styles.description}>
+                            <p>
+                                <strong>Juan Leonel Vazquez Iglesias, </strong>
+                                es un desarrollador de software en busca de experiencia en el desarrollo de aplicación web y aplicaciones móviles y en camino a convertirse en desarrollador Full Stack con en el lenguaje de programación
+                                <strong> JavaScript.</strong>
+                            </p>
                         </article>
                     </section>
                 </section>

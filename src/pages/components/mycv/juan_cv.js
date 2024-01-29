@@ -7,11 +7,8 @@ function JuanCv(){
         <section className={styles.container}>
             <h1>Mi CV, Juan Leonel Vazquez Iglesias</h1>
             <section className={styles.container_cv}>
-                <article className={styles.informacion_cv_link}>
-                    <a target="_blank" href={URL} >Descargar CV</a>
-                </article>
-                <br></br>
-                <iframe className={styles.cvjuan} src={URL} allow="autoplay"></iframe>
+                <a target="_blank" className={styles.informacion_cv_link}href={URL} >Descargar CV</a>
+                <iframe className={styles.cvjuan} src={URL}></iframe>
             </section>
         </section>
     );
