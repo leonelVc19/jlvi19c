@@ -76,7 +76,9 @@ export default function Home() {
             />
           </article>
         </section>
-        <MyProjects></MyProjects>
+        <section>
+          <MyProjects></MyProjects>
+        </section>
         <JuanCv />
         <Skill></Skill>
         <Contact />

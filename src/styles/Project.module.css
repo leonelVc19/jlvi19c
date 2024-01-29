@@ -5,13 +5,6 @@
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-mono);
-  height: 80vh;
-}
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .text {
   padding: 20px;
@@ -135,4 +128,13 @@
   background: linear-gradient(45deg, #0195ff, #0ee7fa);
   box-shadow: 0 5px 15px rgba(0, 247, 255, 0.5);
   transition: 0.3s ease-in-out;
+}
+@media (max-width: 680px ) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
 }
