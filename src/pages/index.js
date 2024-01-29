@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import "./NavBar/nav";
 import "./Footer/footer";
-import Button from "./components/components/Button";
+import ButtonLink from "./components/components/Button";
 import JuanCv from "./components/mycv/juan_cv";
 import Skill from './components/skills/skill'
 import Contact from "./components/contact";
@@ -53,16 +53,16 @@ export default function Home() {
             <br></br>
             <br></br>
             <div className={styles.buttons_index}>
-              <Button
+              <ButtonLink
                 title="Skills"
                 link="/components/skills/skill"
                 onClick={() => alert("Aun en desarrollo...")}
-              ></Button>
-              <Button
+              ></ButtonLink>
+              <ButtonLink
                 title="Contacto"
                 link="/components/contact"
                 onClick={() => alert("Aun en desarrollo...")}
-              ></Button>  
+              ></ButtonLink>  
             </div>
           </article>
           <article className={styles.center}>

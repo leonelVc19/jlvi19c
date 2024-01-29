@@ -19,11 +19,11 @@
   gap: 20px;
 }
 .card {
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05);
-    border-radius: 15px;
-    gap: 10px;
-    border: 1px solid #f1f1f157;
-    backdrop-filter: blur(2px);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  gap: 10px;
+  border: 1px solid #f1f1f157;
+  backdrop-filter: blur(2px);
 }
 
 .box {
@@ -37,28 +37,27 @@
   transition: 0.5s ease-in-out;
 }
 .content {
-    padding: 5px;
-    text-align: center;
-    flex-direction: column;
+  padding: 5px;
+  text-align: center;
+  flex-direction: column;
 
 }
 .container .card .box .content h2 {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.02);
-    transition: 0.5s;
-
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.02);
+  transition: 0.5s;
 }
 .container .card .box .content h3 {
-    font-size: 1.1em;
-    color: #777;
-    z-index: 1;
-    transition: 0.4s;
-    margin: 8px;
-    top: 0px;
-    bottom: 10px;
+  font-size: 1.1em;
+  color: #777;
+  z-index: 1;
+  transition: 0.4s;
+  margin: 8px;
+  top: 0px;
+  bottom: 10px;
 }
  .content p {
   font-size: 0.7em;
@@ -70,27 +69,26 @@
 }
 .container .card .box .content a {
   margin-top: 50px;
-    padding: 5px 10px;
-    border: solid 1px rgba(0, 106, 255, 0.5);
-    transition: 0.3s ease-in-out;
-    transition: 0.5s ease-in-out;
-    margin-top: 15px;
-    text-decoration: none;
-    font-weight: 400;
-    color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    position: fixed;
-    bottom: 8px;
-    left: 8px;
-    right: 8px;
+  padding: 5px 10px;
+  border: solid 1px rgba(0, 106, 255, 0.5);
+  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
 }
 
 
 .container .card .box::before {
-    content: "";
-  
-    background: rgba(118, 30, 233, 0.02);
+  content: "";
+  background: rgba(118, 30, 233, 0.02);
 }
 .container .card:hover .box {
   /* transform: translateY(-40px); */
