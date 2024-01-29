@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 function Card() {
     return(
-      <div className={styles.grid}>
+      <section className={styles.grid}>
         <Link
           href="/components/projects/project"
           className={styles.card}
@@ -19,9 +19,7 @@ function Card() {
             En este apartado encontrará los proyectos que realice, tanto en la escuela como en la estadía técnica
           </p>
         </Link>
-
-        
-      </div>
+      </section>
     );
 };
 
