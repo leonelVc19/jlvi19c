@@ -1,7 +1,7 @@
 import styles from '@/styles/ButtonComponent.module.css';
 import Link from 'next/link';
 
-function Button({title, link = '/', tart = ''}) {
+function ButtonLink({title, link = '/', tart = ''}) {
     return <Link 
         className={styles.informacion_cv_link} 
         href={link} download
@@ -9,4 +9,4 @@ function Button({title, link = '/', tart = ''}) {
     >{title}</Link>;
 };
 
-export default Button;
+export default ButtonLink;

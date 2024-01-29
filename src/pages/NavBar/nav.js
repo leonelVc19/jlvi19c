@@ -1,6 +1,6 @@
 import styles from '@/styles/Navbar.module.css';
 import Link from 'next/link';
-import Button from "../components/components/Button";
+import ButtonLink from "../components/components/Button";
 
 function NavBar() {
 
@@ -10,12 +10,12 @@ function NavBar() {
                 <h2 className={styles.titleLogo}>JLVI</h2> 
             </Link>
             <nav className={styles.nav}>
-                <Button
+                <ButtonLink
                     title="Descargar CV"
                     link="https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan+Leonel+Vazquez+Iglesias+CV.pdf"
                     tart="_blank"
                 >
-                </Button>
+                </ButtonLink>
                 <article className={styles.nav_link}>
                     <Link href="/" >Inicio</Link>
                 </article>
