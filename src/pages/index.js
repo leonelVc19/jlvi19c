@@ -44,14 +44,11 @@ export default function Home() {
           
             <article className={styles.text_main}> 
               <h3>Ing. en Desarrollo y Gestión Software</h3>
-              <p>  
-              
+              <p className={styles.text_main_description}>  
                 Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
                 para trabajar en equipo, ademas que disfruto siendo autodidacta.
               </p>
             </article>
-            <br></br>
-            <br></br>
             <div className={styles.buttons_index}>
               <ButtonLink
                 title="Skills"
@@ -65,6 +62,7 @@ export default function Home() {
               ></ButtonLink>  
             </div>
           </article>
+
           <article className={styles.center}>
             <Image
               className={styles.logo}

@@ -71,7 +71,18 @@ function About() {
                         </article>
                     </section>
                 </section>
+                <div>
+                    <article>
+                        <h3>Kevin Kaarl - Es que yo te quiero a yi</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NXiXZGPqp1E?si=4rAVq3toxtYxLmzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </article>
+                    <article>
+                        <h3>Kevin Kaarl - Me va costar</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FZU8I9bPaTo?si=YYyNEMSasRsSDJ37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </article>
+                </div>
             </section>
+
         </section>
     );
 }

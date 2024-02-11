@@ -4,7 +4,6 @@ import NavBar from './NavBar/nav';
 import Footer from './Footer/footer';
 
 export default function Document() {
-  const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
   return (
     <Html lang="en">
       <Head />

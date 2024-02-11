@@ -3,41 +3,42 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  height: auto;
   font-family: var(--font-mono);
-  
+  padding-top: 3.60rem;
 }
 .main_presentation{
-  display: flex; 
-  width: 100%;
-  padding: 3rem;
-  padding-top: 8rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
   background-image: url('../../public/development2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position:bottom 0px right 0px ;
+  padding: 1rem;
 }
-.main_presentation_text{ 
-  width: 50%;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  backdrop-filter: blur(20px);
-  padding: 10px;
+.main_presentation_text{
+  width: 60%;
+  backdrop-filter: blur(90px);
+  border: 1px solid #444;
+  padding: 1rem;
   border-radius: 10px;
+  z-index: 10;
 }
 .text_main {
-  left: 50px;
-  top: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text_main_description{
+  text-wrap: wrap;
+  text-align: justify;
+  line-height: 1.3rem;
 }
 .buttons_index{
   display: flex;
   gap: 5px;
-  padding: 5px;
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
 }
 .description {
   font-size: 0.85rem;
@@ -91,13 +92,11 @@
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
-  
-    font-family: var(--font-mono);  
+  font-family: var(--font-mono);  
 }
 .infomacionC {
   margin: 15px;
-    font-family: var(--font-mono);  
-
+  font-family: var(--font-mono);
 }
 
 .card p {
@@ -217,17 +216,12 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  
 }
 
 .informacion_cv_text{
-  font-size: 2rem;
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
+  font-size: 1.4rem;
   width: 33.7ch;
   filter: drop-shadow( 0 2px 3px rgb(92, 92, 92));
-  animation: typing 2s steps(24), blink .5s infinite step-end alternate ;
 }
 /*Keyframe to text machine* */
 @keyframes typing {
@@ -261,14 +255,10 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  /* .main{
-    width: 100%;
+  .main {
+    padding-top:6.61rem;
   }
-  .content {
-    padding: 2rem;
-  } */
   .main_presentation {
-    padding-top: 10rem;
     flex-direction: column;
   }
   .main_presentation_text{

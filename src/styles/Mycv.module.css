@@ -1,17 +1,21 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     font-family: var(--font-mono);
     width: 100%;
-    height: 75vh;
+    padding: 1rem;
     box-shadow: inset 0 -3px 7px rgba(0, 0, 0, 0.8), inset 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 .container h1 {
     padding-top:1.3rem;
 }
+.container_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
 
+}
 .container_cv{
     display: flex;
     flex-direction: column;
@@ -20,6 +24,7 @@
 }
 
 .informacion_cv_link{
+    word-wrap: none;
     padding: 5px;
     border-radius: 5px;
     border: solid 1px rgba(0, 106, 255, 0.5);
@@ -37,8 +42,8 @@
 }
 
 .cvjuan {
-    height: 60vh;
-    width: 50vw;
+    height: 50rem;
+    width: 70%;
     border-radius: 10px;
     box-shadow: 0 5px 12px rgba(94, 96, 100, 0.8);
     margin: 2rem;
