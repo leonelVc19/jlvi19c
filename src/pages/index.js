@@ -19,24 +19,24 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JuanIglesias</title>
+        <title>JLVI19C</title>
         <meta name="description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Portaforlio de Juan Leonel"/>
+        <meta name="description" content="Portaforlio de Juan Leonel Vazquez Iglesias"/>
 
         <meta property="og:url" content="https://jlvi19c.vercel.app/"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="JuanIglesias"/>
+        <meta property="og:title" content="JLVI19C"/>
         <meta property="og:description" content="Este es mi portafolio"/>
         <meta property="og:image" content=""/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta property="twitter:domain" content="jlvi19c.vercel.app"/>
         <meta property="twitter:url" content="https://jlvi19c.vercel.app/"/>
-        <meta name="twitter:title" content="JuanIglesias"/>
+        <meta name="twitter:title" content="JLVI19C"/>
         <meta name="twitter:description" content="Bienvenido a mi portafolio"/>
         <meta name="twitter:image" content=""/>
-        <link rel="icon" href="/jlvi_icon_web.svg"  loading="lazy"/>
+        <link rel="icon" href="/JLVI19C.svg"/>
       </Head>
 
       <main className={styles.main}>
@@ -69,7 +69,7 @@ export default function Home() {
           <article className={styles.center}>
             <Image
               className={styles.logo}
-              src={`https://${domain}/juan.svg`}
+              src='/JLVI19C.svg'
               alt="Logo JLVI19C"
               width={230}
               height={230}

@@ -1,5 +1,7 @@
 import styles from '@/styles/Navbar.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+
 import ButtonLink from "../components/components/Button";
 
 function NavBar() {
@@ -7,7 +9,16 @@ function NavBar() {
     return(
         <header className={styles.header}>
             <Link className={styles.t} href="/">
-                <h2 className={styles.titleLogo}>JLVI</h2> 
+                {/* <h2 className={styles.titleLogo}>JLVI</h2>  */}
+                <Image
+                className={styles.logo}
+                src='/JLVI19C.svg'
+                alt="Logo JLVI19C"
+                width={109}
+                height={25}
+                layout="cover"
+                loading="lazy"
+                />
             </Link>
             <nav className={styles.nav}>
                 <ButtonLink
