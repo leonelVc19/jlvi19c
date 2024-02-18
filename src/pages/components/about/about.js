@@ -10,56 +10,61 @@ function About() {
                     <section >
                         <article className={styles.photo}>
                             <div className={styles.card}>
-                                    <article className={styles.imgBox}>
-                                            <Image
-                                                src='https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan_Leonel_Vazquez_Iglesias.jpeg'
-                                                alt='Juan Iglesias'
-                                                width={500}
-                                                height={500}
-                                                className={styles.myphoto}
-                                            ></Image>
-                                    </article>
-                                    <section className={styles.contentTex}>
-                                        <header className={styles.contentBox}>
-                                            <h3>Juan Iglesias <br></br> <span> Ing. DGS </span></h3>
-                                        </header>
-                                        <br></br>
-                                        <ul className={styles.sci}>
-                                            <li>
-                                                <a href="https://github.com/leonelVc19" target='_blank'>
-                                                    <Image
-                                                        src='/icons/github.png'
-                                                        alt='Juan Iglesias'
-                                                        width={18}
-                                                        height={18}
-                                                        priority
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li >
-                                                <a href="mailto: vazquez.juan.1fm@gmail.com" target='_blank'>
-                                                    <Image
-                                                        src='/icons/gmail.png'
-                                                        alt='Juan Iglesias'
-                                                        width={18}
-                                                        height={18}
-                                                        priority
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li >
-                                                <a href="https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/" target='_blank'>
-                                                    <Image
-                                                        src='/icons/linkedin.png'
-                                                        alt='Juan Iglesias'
-                                                        width={18}
-                                                        height={18}
-                                                        priority
-                                                    />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </section>
+                                <article className={styles.imgBox}>
+                                        <Image
+                                            src='https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan_Leonel_Vazquez_Iglesias.jpeg'
+                                            alt='Juan Iglesias'
+                                            width={500}
+                                            height={500}
+                                            className={styles.myphoto}
+                                            layout="cover"
+                                            loading="lazy"
+                                        ></Image>
+                                </article>
+                                <section className={styles.contentTex}>
+                                    <header className={styles.contentBox}>
+                                        <h3>Juan Iglesias <br></br> <span> Ing. DGS </span></h3>
+                                    </header>
+                                    <br></br>
+                                    <ul className={styles.sci}>
+                                        <li>
+                                            <a href="https://github.com/leonelVc19" target='_blank'>
+                                                <Image
+                                                    src='/icons/github.png'
+                                                    alt='Juan Iglesias'
+                                                    width={18}
+                                                    height={18}
+                                                    layout="cover"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                        </li>
+                                        <li >
+                                            <a href="mailto: vazquez.juan.1fm@gmail.com" target='_blank'>
+                                                <Image
+                                                    src='/icons/gmail.png'
+                                                    alt='Juan Iglesias'
+                                                    width={18}
+                                                    height={18}
+                                                    loading="lazy"
+                                                    layout="cover"
+                                                />
+                                            </a>
+                                        </li>
+                                        <li >w
+                                            <a href="https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/" target='_blank'>
+                                                <Image
+                                                    src='/icons/linkedin.png'
+                                                    alt='Juan Iglesias'
+                                                    width={18}
+                                                    height={18}
+                                                    layout="cover"
+                                                    loading="lazy"
+                                                />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
                             </div>
                         </article>
                         <article className={styles.description}>
@@ -71,7 +76,15 @@ function About() {
                         </article>
                     </section>
                 </section>
+                <section>
+                    <h1>Unas canciones chidas</h1>
+                    <div className={styles.iframe_articles}>
+                        {/* <iframe className={styles.iframe_kk } width="350" height="200" src="https://www.youtube.com/embed/NXiXZGPqp1E?si=4rAVq3toxtYxLmzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className={styles.iframe_kk }width="350" height="200" src="https://www.youtube.com/embed/FZU8I9bPaTo?si=YYyNEMSasRsSDJ37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+                    </div>
+                </section>
             </section>
+
         </section>
     );
 }

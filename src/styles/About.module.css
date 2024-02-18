@@ -7,9 +7,7 @@
     min-height: 100vh;
     text-align: center;
     font-family: var(--font-mono);
-   
 }
-
 .center {
     display: flex;
     justify-content: center;
@@ -178,10 +176,20 @@
 .description {
     padding: 1.4rem;
 }
-
+.iframe_articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 .texts h1 {
     padding: 7px;
     letter-spacing: 1px;
+}
+.iframe_kk{
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 707px) {
     .texts {

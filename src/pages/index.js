@@ -1,17 +1,21 @@
+'use client'
 import Head from "next/head";
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import "./NavBar/nav";
 import "./Footer/footer";
 import ButtonLink from "./components/components/Button";
-import JuanCv from "./components/mycv/juan_cv";
-import Skill from './components/skills/skill'
-import Contact from "./components/contact";
-import About from "./components/about/about";
-import MyProjects from "./components/projects/project";
+const SkillsComponent = dynamic(() => import('./components/skills/skill.js'));
+const CvComponent =     dynamic(() => import('./components/mycv/juan_cv.js'));
+const ContactComponent = dynamic(() => import('./components/contact.js'));
+const AboutComponent =   dynamic(() => import('./components/about/about.js'));
+const ProjectsComponent = dynamic(() => import('./components/projects/project.js'));
+
 
 export default function Home() {
   const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
+
   return (
     <>
       <Head>
@@ -32,7 +36,7 @@ export default function Home() {
         <meta name="twitter:title" content="JuanIglesias"/>
         <meta name="twitter:description" content="Bienvenido a mi portafolio"/>
         <meta name="twitter:image" content=""/>
-        <link rel="icon" href="/jlvi_icon_web.svg" />
+        <link rel="icon" href="/jlvi_icon_web.svg"  loading="lazy"/>
       </Head>
 
       <main className={styles.main}>
@@ -44,14 +48,11 @@ export default function Home() {
           
             <article className={styles.text_main}> 
               <h3>Ing. en Desarrollo y Gestión Software</h3>
-              <p>  
-              
+              <p className={styles.text_main_description}>  
                 Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
                 para trabajar en equipo, ademas que disfruto siendo autodidacta.
               </p>
             </article>
-            <br></br>
-            <br></br>
             <div className={styles.buttons_index}>
               <ButtonLink
                 title="Skills"
@@ -70,19 +71,21 @@ export default function Home() {
               className={styles.logo}
               src={`https://${domain}/juan.svg`}
               alt="Logo JLVI19C"
-              width={130}
-              height={130}
-              priority
+              width={230}
+              height={230}
+              layout="cover"
+              loading="lazy"
             />
           </article>
         </section>
         <section>
-          <MyProjects></MyProjects>
+          {/* <MyProjects></MyProjects> */}
+          <ProjectsComponent />
         </section>
-        <JuanCv />
-        <Skill></Skill>
-        <Contact />
-        <About />
+        <CvComponent />
+        <SkillsComponent />
+        <ContactComponent />
+        <AboutComponent />
       </main>
     </>
   );
