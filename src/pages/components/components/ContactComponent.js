@@ -9,7 +9,7 @@ function ContactComponent({imagen, url, titulo}) {
                 alt={titulo}
                 width={30}
                 height={30}
-                priority
+                layout="cover"loading="lazy"
             />
         </a>
     ); 

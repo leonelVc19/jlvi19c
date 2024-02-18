@@ -10,9 +10,16 @@ function Project  () {
     
     const [projectsApi, setProjectsApi] = React.useState([]);
     const get_projects = async () => {
-        const response = await fetch(`${url_api}/projects`);
-        const  projects = await response.json();
-        setProjectsApi(projects);
+        try {
+            const response = await fetch(`${url_api}/projects`);
+            console.log('3333');
+            const  response_projects = await response.json();
+            console.log('3333',response_projects);
+            setProjectsApi(response_projects);
+        } catch (error) {
+            // console.error(error);
+            setProjectsApi([])
+        }
     }
     React.useEffect( () => {
         get_projects();
@@ -28,6 +35,8 @@ function Project  () {
             </header>
             <section  className={styles.container}>
                 { 
+                projectsApi.length === 0 ? 
+                    <p>SIN PROYECTOS DE MOMENTO</p> :
                     projectsApi.map((project, index) => {
                         const url_p = project.url === "" ? null : project.url;
                         const url_target = project.url === "" ? null : '_blank';
@@ -42,6 +51,7 @@ function Project  () {
                                             width={280}
                                             height={200}
                                             alt={project.title}
+                                            loading="lazy"
                                         />
                                     </a>
                                     <footer className={styles.content_footer}>

@@ -10,20 +10,42 @@ const url_api = process.env.NEXT_PUBLIC_URL_API;
 
 
 const MyProjects = () => {
+  
     const  { query: {id}} = useRouter();
+
+    let id_project = id
+
+console.log("Proecto id",id_project);
     // const url_p = url === "_" ? '#' : url;
     // const url_target = url === "_" ? '' : '_blank';
-     
-    const [projectId, setProjectId] = React.useState([]);
-    console.log(projectId);
-    const get_projects = async () => {
-        const response = await fetch(`${url_api}/project/${id}`);
-        const  projects = await response.json();
-        setProjectId(projects);
-    }
-    React.useEffect( () => {
-        get_projects();
-    }, []);
+    const [project, setProject] = React.useState();
+    console.log(project?.projectByID);
+    const proyecto = project?.projectByID ?? {};
+    
+const getProjects = async () => {
+            try {
+                let id_p = id_project;
+                const storedId = localStorage.getItem('id_project');
+                if (!id_p && storedId) {
+                    id_p = storedId;
+                    console.log("ID desde el localStorage", id_p);
+                }
+    
+                const response = await fetch(`${url_api}/project/${id_p}`);
+                const projectByIdResponse = await response.json();
+                setProject(projectByIdResponse);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+    React.useEffect(() => {
+        let id_project = id;
+        console.log("Proyecto ID", id_project);
+        localStorage.setItem("id_project", String(id_project));
+    
+        getProjects();
+    }, [id]); // Ejecutar useEffect cuando id cambie
+    
     return (
         <div className={styles.main}>
             <div className={styles.main_title}>
@@ -31,10 +53,19 @@ const MyProjects = () => {
             </div>
             <div className={styles.content}>
                 <div className={styles.main_content_text}>
-                    <h5>{id}</h5>
+                    <h5>{id_project}</h5>
                     <a href=''>
-                        <h1>titulo</h1>
+                        <h1>{proyecto.title}</h1>
                     </a>
+                    <Image
+                        className={styles.content_image}
+                        src={proyecto.image}
+                        style={{objectFit: "cover", borderRadius: 10}}	
+                        width={280}
+                        height={200}
+                        alt={proyecto.title}
+                        loading="lazy"
+                    />
                     <div className={styles.main_content_text_p}>
                         <p>sjsjs</p>
                     </div>
@@ -42,23 +73,33 @@ const MyProjects = () => {
                     <p><strong>!Hola, soy Juan Iglesias!</strong> Espero te gusten mis proyectos!</p>
                 </div>
                 <div className={styles.main_content_img}>
-                {/* {
-                    images ? images?.map((img, index) => <>
+                {
+                    proyecto.images ? proyecto.images?.map((img, index) => <>
                         <div  className={styles.img} key={index}>
                             <Image
-                                src={`https://${domain}/${img}`}
-                                alt={title}
+                                src={img.url}
+                                alt={img.name}
                                 width={400}
                                 height={150}
                                 className={styles.img_project}
-                                priority
+                                layout="cover"loading="lazy"
                             />
                             <p>{index+1}</p>
                         </div>
                     </>)
                     : 'Sin Imágenes'
-                } */}
+                } 
                 </div>
+                <article>
+                    {
+                        proyecto.skills ? proyecto.skills?.map((skill, index) => <>
+                      
+                               
+                                <p key={index}>{skill.name}</p>
+                        </>)
+                        : 'Sin Imágenes'
+                    } 
+                </article>
             </div>
         </div>
     );

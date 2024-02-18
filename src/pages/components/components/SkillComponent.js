@@ -9,9 +9,10 @@ function SkillComponent({title, image, url}) {
                     <Image 
                         src={image}
                         alt={title}
-                        width={50}
-                        height={50}
+                        width={35}
+                        height={35}
                         className={styles.imagen}
+                        layout="cover"loading="lazy"
                     />
                     <h6>{title}</h6>
                 </article>

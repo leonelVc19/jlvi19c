@@ -16,6 +16,8 @@ function Footer() {
                                 className={styles.footer_logo_img}
                                 width={50}
                                 height={50}
+                                layout="cover"
+                                loading="lazy"
                             />
                             <p>JLVI</p>
                         </Link>
@@ -29,7 +31,11 @@ function Footer() {
                                 target="_blank" 
                                 className={styles.footer_social_link}
                             >
-                                <Image  src={social.imagen} width={25} height={25} alt={social.title}/>
+                                <Image  
+                                    src={social.imagen} width={25} height={25} 
+                                    alt={social.title}
+                                    layout="cover"loading="lazy"
+                                />
                             </a>
                         </>)}
                     </article>

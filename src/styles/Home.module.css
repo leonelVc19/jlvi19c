@@ -7,6 +7,7 @@
   font-family: var(--font-mono);
   padding-top: 3.60rem;
 }
+
 .main_presentation{
   display: flex;
   justify-content: center;
@@ -18,6 +19,10 @@
   background-size: cover;
   background-position:bottom 0px right 0px ;
   padding: 1rem;
+}
+.main_presentation_2 {
+  background: red;
+  transition: all 0.3s ease-in-out;
 }
 .main_presentation_text{
   width: 60%;
@@ -256,10 +261,12 @@
 /* Mobile */
 @media (max-width: 700px) {
   .main {
-    padding-top:6.61rem;
+    height: auto;
+    padding-top: 6.6rem;
   }
   .main_presentation {
     flex-direction: column;
+
   }
   .main_presentation_text{
     width: 100%;
