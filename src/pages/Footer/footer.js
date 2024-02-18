@@ -11,15 +11,14 @@ function Footer() {
                     <article className={styles.footer_container_logo}>
                         <Link href="/" className={styles.footer_logo}>
                             <Image 
-                                src="/juan.svg"
+                                src="/JLVI19C.svg"
                                 alt="JLVI19C"
                                 className={styles.footer_logo_img}
-                                width={50}
-                                height={50}
+                                width={100}
+                                height={100}
                                 layout="cover"
                                 loading="lazy"
                             />
-                            <p>JLVI</p>
                         </Link>
                         <p className={styles.footer_description}>
                             ¡Hola! :3
@@ -35,6 +34,7 @@ function Footer() {
                                     src={social.imagen} width={25} height={25} 
                                     alt={social.title}
                                     layout="cover"loading="lazy"
+                                    className={styles.footer_social_icon}
                                 />
                             </a>
                         </>)}

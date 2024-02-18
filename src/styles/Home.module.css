@@ -262,7 +262,7 @@
 @media (max-width: 700px) {
   .main {
     height: auto;
-    padding-top: 6.6rem;
+    padding-top: 8.5rem;
   }
   .main_presentation {
     flex-direction: column;

@@ -76,15 +76,7 @@ function About() {
                         </article>
                     </section>
                 </section>
-                <section>
-                    <h1>Unas canciones chidas</h1>
-                    <div className={styles.iframe_articles}>
-                        {/* <iframe className={styles.iframe_kk } width="350" height="200" src="https://www.youtube.com/embed/NXiXZGPqp1E?si=4rAVq3toxtYxLmzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <iframe className={styles.iframe_kk }width="350" height="200" src="https://www.youtube.com/embed/FZU8I9bPaTo?si=YYyNEMSasRsSDJ37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-                    </div>
-                </section>
             </section>
-
         </section>
     );
 }

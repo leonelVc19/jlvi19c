@@ -32,8 +32,6 @@
 .card{
   transition: all 0.2s ease-in-out;
   border-radius: 1.7rem ;
-
-
 }
 .content {
   border: 2px solid #3d3d3d;
