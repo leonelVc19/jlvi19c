@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     font-family: Ubuntu;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.09);
@@ -12,26 +11,24 @@
     backdrop-filter: blur(5px);
     border: 1px solid rgba(var(--callout-border-rgb), 0.3);
     border-radius: 4px;
-    z-index: 100000;
+    transition: all 0.7s ease-in-out;
+    z-index: 100;
 }
 
-.t {
+.header_logo {
     transition: 0.4s ease-in-out;
 }
-.t:hover {
+.header_logo:hover {
     transform: translateX(5px);
     transition: 0.4s ease-in-out;
 }
 .logo{
     border-radius: 10%;
 }
-
 .nav {
     display: flex;
     gap: 1px;
 }
-
-
 .nav_link {
     display: flex;
     color: hsl(0, 0%, 100%);

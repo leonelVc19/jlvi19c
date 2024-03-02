@@ -12,9 +12,9 @@ function Project  () {
     const get_projects = async () => {
         try {
             const response = await fetch(`${url_api}/projects`);
-            console.log('3333');
+           
             const  response_projects = await response.json();
-            console.log('3333',response_projects);
+            
             setProjectsApi(response_projects);
         } catch (error) {
             // console.error(error);

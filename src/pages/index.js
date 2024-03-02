@@ -5,17 +5,15 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import "./NavBar/nav";
 import "./Footer/footer";
-import ButtonLink from "./components/components/Button";
 const SkillsComponent = dynamic(() => import('./components/skills/skill.js'));
 const CvComponent =     dynamic(() => import('./components/mycv/juan_cv.js'));
-const ContactComponent = dynamic(() => import('./components/contact.js'));
+const ContactComponent = dynamic(() => import('./components/ContactComponent.js'));
 const AboutComponent =   dynamic(() => import('./components/about/about.js'));
 const ProjectsComponent = dynamic(() => import('./components/projects/project.js'));
 
 
 export default function Home() {
-  const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
-
+  console.log('Handling scroll event');
   return (
     <>
       <Head>
@@ -38,7 +36,6 @@ export default function Home() {
         <meta name="twitter:image" content=""/>
         <link rel="icon" href="/JLVI19C.svg"/>
       </Head>
-
       <main className={styles.main}>
         <section className={styles.main_presentation}>
           <article className={styles.main_presentation_text}>
@@ -52,39 +49,28 @@ export default function Home() {
                 Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
                 para trabajar en equipo, ademas que disfruto siendo autodidacta.
               </p>
+            </article> 
+            <article>
+              <ContactComponent />
             </article>
-            <div className={styles.buttons_index}>
-              <ButtonLink
-                title="Skills"
-                link="/components/skills/skill"
-                onClick={() => alert("Aun en desarrollo...")}
-              ></ButtonLink>
-              <ButtonLink
-                title="Contacto"
-                link="/components/contact"
-                onClick={() => alert("Aun en desarrollo...")}
-              ></ButtonLink>  
-            </div>
           </article>
           <article className={styles.center}>
             <Image
               className={styles.logo}
-              src='/JLVI19C.svg'
-              alt="Logo JLVI19C"
-              width={230}
-              height={230}
+              src='https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan_Leonel_Vazquez_Iglesias.jpeg'
+              alt='Juan Iglesias'
+              width={240}
+              height={360}
               layout="cover"
               loading="lazy"
             />
           </article>
         </section>
         <section>
-          {/* <MyProjects></MyProjects> */}
           <ProjectsComponent />
         </section>
         <CvComponent />
         <SkillsComponent />
-        <ContactComponent />
         <AboutComponent />
       </main>
     </>

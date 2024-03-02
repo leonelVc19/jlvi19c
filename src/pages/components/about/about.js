@@ -7,7 +7,7 @@ function About() {
         <section >
             <section className={styles.center}>
                 <section className={styles.texts}>
-                    <section >
+                    <section className={styles.texts_justify} >
                         <article className={styles.photo}>
                             <div className={styles.card}>
                                 <article className={styles.imgBox}>
@@ -23,47 +23,12 @@ function About() {
                                 </article>
                                 <section className={styles.contentTex}>
                                     <header className={styles.contentBox}>
-                                        <h3>Juan Iglesias <br></br> <span> Ing. DGS </span></h3>
+                                        <h3>Juan L. Iglesias V. <br></br> <span> Ing. DGS </span></h3>
                                     </header>
                                     <br></br>
-                                    <ul className={styles.sci}>
-                                        <li>
-                                            <a href="https://github.com/leonelVc19" target='_blank'>
-                                                <Image
-                                                    src='/icons/github.png'
-                                                    alt='Juan Iglesias'
-                                                    width={18}
-                                                    height={18}
-                                                    layout="cover"
-                                                    loading="lazy"
-                                                />
-                                            </a>
-                                        </li>
-                                        <li >
-                                            <a href="mailto: vazquez.juan.1fm@gmail.com" target='_blank'>
-                                                <Image
-                                                    src='/icons/gmail.png'
-                                                    alt='Juan Iglesias'
-                                                    width={18}
-                                                    height={18}
-                                                    loading="lazy"
-                                                    layout="cover"
-                                                />
-                                            </a>
-                                        </li>
-                                        <li >w
-                                            <a href="https://www.linkedin.com/in/juan-leonel-vazquez-iglesias-74b553230/" target='_blank'>
-                                                <Image
-                                                    src='/icons/linkedin.png'
-                                                    alt='Juan Iglesias'
-                                                    width={18}
-                                                    height={18}
-                                                    layout="cover"
-                                                    loading="lazy"
-                                                />
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <p className={styles.sci}>
+                                        JLVI19C
+                                    </p>
                                 </section>
                             </div>
                         </article>
