@@ -5,7 +5,7 @@ import { socialNetworks } from '/public/data/socialNetwork';
 
 function Footer() {
     return (
-        <footer className={styles.footer} >
+        <footekr className={styles.footer} >
             <section className={styles.footer_container}>
                 <section>
                     <article className={styles.footer_container_logo}>
@@ -51,7 +51,7 @@ function Footer() {
                 </span>
                 <br/>
             </section>
-        </footer>
+        </footekr>
     );
 };
 export default Footer;

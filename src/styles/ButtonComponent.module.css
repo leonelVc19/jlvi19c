@@ -4,6 +4,8 @@
     border-radius: 5px;
     border: solid 1px rgba(0, 106, 255, 0.5);
     transition: 0.3s ease-in-out;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    background: linear-gradient(45deg, #0195ff30, #0ee7fa30);
 
 }
 .informacion_cv_link:hover {

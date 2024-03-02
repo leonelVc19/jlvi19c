@@ -10,19 +10,17 @@ const url_api = process.env.NEXT_PUBLIC_URL_API;
 
 
 const MyProjects = () => {
-  
     const  { query: {id}} = useRouter();
-
     let id_project = id
 
-console.log("Proecto id",id_project);
+    console.log("Proecto id",id_project);
     // const url_p = url === "_" ? '#' : url;
     // const url_target = url === "_" ? '' : '_blank';
     const [project, setProject] = React.useState();
     console.log(project?.projectByID);
     const proyecto = project?.projectByID ?? {};
     
-const getProjects = async () => {
+    const getProjects = async () => {
             try {
                 let id_p = id_project;
                 const storedId = localStorage.getItem('id_project');
@@ -30,7 +28,6 @@ const getProjects = async () => {
                     id_p = storedId;
                     console.log("ID desde el localStorage", id_p);
                 }
-    
                 const response = await fetch(`${url_api}/project/${id_p}`);
                 const projectByIdResponse = await response.json();
                 setProject(projectByIdResponse);
@@ -93,9 +90,7 @@ const getProjects = async () => {
                 <article>
                     {
                         proyecto.skills ? proyecto.skills?.map((skill, index) => <>
-                      
-                               
-                                <p key={index}>{skill.name}</p>
+                            <p key={index}>{skill.name}</p>
                         </>)
                         : 'Sin Imágenes'
                     } 

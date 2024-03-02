@@ -5,7 +5,6 @@
   align-items: center;
   height: auto;
   font-family: var(--font-mono);
-  padding-top: 3.60rem;
 }
 
 .main_presentation{
@@ -14,15 +13,14 @@
   align-items: center;
   min-height: 80vh;
   width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-image: url('../../public/development2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:bottom 0px right 0px ;
+  background-position: center center;
   padding: 1rem;
-}
-.main_presentation_2 {
-  background: red;
-  transition: all 0.3s ease-in-out;
 }
 .main_presentation_text{
   width: 60%;
@@ -53,26 +51,6 @@
   font-family: var(--font-mono);
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
 
 .grid {
   display: grid;
@@ -89,29 +67,6 @@
   transition: background 200ms, border 200ms;
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-  font-family: var(--font-mono);  
-}
-.infomacionC {
-  margin: 15px;
-  font-family: var(--font-mono);
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
 .center {
   width: 50%;
   display: flex;
@@ -119,8 +74,8 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
-  animation: moverlogo 5s infinite;
-  transition: 0.5s ease-in-out;
+  animation: moverlogo 4s infinite;
+  transition: all 0.5s ease-in-out;
 }
 
 .center::before {
@@ -148,20 +103,15 @@
 }
 .center:hover {
   transform: translateY(-5px);
-  transition: 0.5s ease-in-out;
 }
 
 @keyframes moverlogo {
   0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 18px); }
-    100%   { transform: translate(0, -0px); }   
+  100%   { transform: translate(0, -0px); }   
 }
 
 
-.logo,
-.thirteen {
-  position: relative;
-}
 
 .thirteen {
   display: flex;
@@ -208,12 +158,11 @@
   background-clip: content-box;
 }
 .logo {
-  border-radius: 20px;
-  transition: 0.5s ease-in-out;
+  border-radius: 1.5rem;
+  transition: all 0.5s ease-in-out;
 }
 .logo:hover {
-  transform: scale(1.2);
-  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .informacion_cv {
   display: flex;
@@ -242,17 +191,14 @@
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
-
   .card:hover span {
     transform: translateX(4px);
   }
 }
-
 @media (prefers-reduced-motion) {
   .thirteen::before {
     animation: none;
   }
-
   .card:hover span {
     transform: none;
   }
@@ -262,11 +208,10 @@
 @media (max-width: 700px) {
   .main {
     height: auto;
-    padding-top: 8.5rem;
   }
   .main_presentation {
     flex-direction: column;
-
+    
   }
   .main_presentation_text{
     width: 100%;
@@ -274,34 +219,25 @@
   .buttons_index{
     padding: 20px;
     padding-top: 60px;
-
   }
   .center{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .infomacionC{
     text-align: center;
   }
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
   .card {
     padding: 1rem 2.5rem;
   }
-
   .card h2 {
     margin-bottom: 0.5rem;
   }
-
   .center {
     padding: 8rem 0 6rem;
-
   }
-
   .center::before {
     transform: none;
     height: 300px;
