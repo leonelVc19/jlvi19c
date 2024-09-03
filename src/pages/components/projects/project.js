@@ -1,7 +1,6 @@
 import * as React from 'react';
 import "@/pages"
 import styles from '@/styles/Project.module.css';
-import { projects } from '../../../../public/data/myProjects';
 import Link from "next/link";
 import Image from "next/image"
 const url_api = process.env.NEXT_PUBLIC_URL_API;
@@ -12,9 +11,7 @@ function Project  () {
     const get_projects = async () => {
         try {
             const response = await fetch(`${url_api}/projects`);
-           
             const  response_projects = await response.json();
-            
             setProjectsApi(response_projects);
         } catch (error) {
             // console.error(error);
@@ -57,6 +54,7 @@ function Project  () {
                                     <footer className={styles.content_footer}>
                                         <pre>{project.id}</pre>
                                         <h3>{project.title}</h3>
+                                        <p className={styles.description}>Una peque;a descricion de algo que este en la car d</p>
                                         <Link className={styles.content_footer_a} href={{
                                             pathname: '/components/projects/my_projects',
                                             query: { 
