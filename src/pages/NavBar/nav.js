@@ -5,18 +5,19 @@ import { useEffect, useState } from 'react';
 
 import ButtonLink from "../components/components/Button";
 function NavBar() {
+    
     return(
         <>
             <header className={styles.header}>
                 <Link className={styles.header_logo} href="/">
                     <Image
-                    className={styles.logo}
-                    src='/JLVI19C.svg'
-                    alt="Logo JLVI19C"
-                    width={109}
-                    height={25}
-                    layout="cover"
-                    loading="lazy"
+                        className={styles.logo}
+                        src='/JLVI19C.svg'
+                        alt="Logo JLVI19C"
+                        width={109}
+                        height={25}
+                        layout="cover"
+                        loading="lazy"
                     />
                 </Link>
                 <nav className={styles.nav}>

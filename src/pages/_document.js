@@ -4,7 +4,6 @@ import NavBar from './NavBar/nav';
 import Footer from './Footer/footer';
 
 export default function Document() {
-  console.log('Handling scroll evenst');
   return (
     <Html lang="en">
       <Head />
