@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
 
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   optimizeFonts: true,
@@ -8,10 +9,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname:  process.env.NEXT_PUBLIC_S3_DOMAIN
+        hostname: domain
       }
     ],
     minimumCacheTTL: 1500000,
   },
 }
-export default nextConfig;
