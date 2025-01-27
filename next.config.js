@@ -9,7 +9,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname:  process.env.NEXT_PUBLIC_S3_DOMAIN
+        hostname: domain
       }
     ],
     minimumCacheTTL: 1500000,
