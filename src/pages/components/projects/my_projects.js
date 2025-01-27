@@ -5,9 +5,9 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 const MyProjects = () => {
-    const  { query: {id}} = useRouter();
-    let id_project = id;
-    const proyecto = project?.projectByID ?? {};
+    // const  { query: {id}} = useRouter();
+    // let id_project = id;
+    // const proyecto = project?.projectByID ?? {};
 
     
     return (
@@ -15,7 +15,7 @@ const MyProjects = () => {
             <div className={styles.main_title}>
                 <h2>Mis proyectos</h2>
             </div>
-            <div className={styles.content}>
+            {/* <div className={styles.content}>
                 <div className={styles.main_content_text}>
                     <h5>{id_project}</h5>
                     <a href=''>
@@ -60,7 +60,7 @@ const MyProjects = () => {
                         : 'Sin Imágenes'
                     } 
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
