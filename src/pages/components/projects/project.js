@@ -25,7 +25,7 @@ function Project  () {
                     ></Image>
                     <div className={styles.card_content}>
                         <h2 className={styles.card_title}>Candy App</h2>
-                        <p className={styles.card_description}>Aplicacion movil para un comercion, desarrollador para la gestion de mercancia en la sucursal.</p>
+                        <p className={styles.card_description}>Aplicación móvil para un comercio, desarrollador para la gestión de mercancía en la sucursal.</p>
                         <div className={styles.content_skills}>
                             <span className={styles.skill}>ReactNative</span>
                             <span className={styles.skill}>JS</span>
