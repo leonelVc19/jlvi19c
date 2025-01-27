@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: domain
+        hostname:  process.env.NEXT_PUBLIC_S3_DOMAIN
       }
     ],
     minimumCacheTTL: 1500000,
