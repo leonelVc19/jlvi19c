@@ -10,3 +10,6 @@ Proyectos:
 - Candy app
 - Gestión de Perfiles RH
 - [JuanIglesias](https://jlvi19c.vercel.app/)
+
+DotEnv
+NEXT_PUBLIC_S3_DOMAIN=
