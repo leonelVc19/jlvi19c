@@ -69,7 +69,7 @@ export default function Home() {
         <section>
           <ProjectsComponent />
         </section>
-        <CvComponent />
+        {/* <CvComponent /> */}
         <SkillsComponent />
         <AboutComponent />
       </main>
