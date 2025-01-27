@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const domain = process.env.NEXT_PUBLIC_S3_DOMAIN;
-const nextConfig = {
+
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   optimizeFonts: true,
@@ -14,4 +15,3 @@ const nextConfig = {
     minimumCacheTTL: 1500000,
   },
 }
-export default nextConfig;
