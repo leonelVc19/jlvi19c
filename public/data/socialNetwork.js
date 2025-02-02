@@ -11,12 +11,7 @@ export const socialNetworks = [
         url: "https://github.com/leonelVc19",
 
     }, 
-    {
-        titulo: "Instagram",
-        imagen: "/icons/instagram.png",
-        url: "https://www.instagram.com/jlvi19c" 
-
-    },  
+  
     {
         titulo: "Whatsapp",
         imagen: "/icons/whatsapp.png",

@@ -1,9 +1,8 @@
 import styles from '@/styles/Navbar.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-
 import ButtonLink from "../components/components/Button";
+
 function NavBar() {
     
     return(
@@ -27,11 +26,9 @@ function NavBar() {
                         tart="_blank"
                     >
                     </ButtonLink>
-                    <article className={styles.nav_link}>
+                    {/* <article className={styles.nav_link}>
                         <Link href="/" >Inicio</Link>
-                    </article>
-                    {/* <Link href="/" className={styles.nav_link}>Mis proyectos</Link>
-                    <Link href="/components/about/about" className={styles.nav_link}>Acerca de</Link> */}
+                    </article> */}
                 </nav>
             </header>
         </>

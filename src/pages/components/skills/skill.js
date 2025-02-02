@@ -8,13 +8,6 @@ function Skill() {
 
     return(
         <section className={styles.containerSkills}>
-            
-            {/* <Image  src='/offices.webp'
-                alt='titu'
-                width={30}
-                height={30}
-                layout="responsive"
-                loading="lazy" /> */}
             <section className={styles.center}>
                 <header className={styles.containerSkills_title}>
                     <h1 className={styles.containerSkills_title_h1}>Skills</h1>
