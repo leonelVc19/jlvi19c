@@ -3,7 +3,7 @@ import "@/pages"
 import styles from '@/styles/Project-Card.module.css';
 import Image from "next/image"
 
-function Card ({ title, image, skills, decripcion, url }) {
+function Card ({ title, image, skills = [], decripcion, url }) {
     return (
         <article className={styles.card}>
             <Image
