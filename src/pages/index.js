@@ -42,12 +42,11 @@ export default function Home() {
             <h1 className={styles.informacion_cv_text}>
               Hola, Soy Juan Leonel Vazquez Iglesias
             </h1>
-          
             <article className={styles.text_main}> 
-              <h3>Ing. en Desarrollo y Gestión Software</h3>
+              <h3>Ingeniero en Desarrollo y Gestión Software</h3>
+              <hr></hr>
               <p className={styles.text_main_description}>  
-                Soy desarrollador web <strong>FullStack</strong>,  en buscan de experiencia. Tengo habilidades
-                para trabajar en equipo, ademas que disfruto siendo autodidacta.
+              Apasionado por el mundo de la tecnología y desarrollo de software, cuento con experiencia en desarrollo web, FullStack y aplicaciones móviles. Me caracterizo por ser autodidacta y estar en constante aprendizaje de nuevas tecnologías día a día, así mismo contando con una gran habilidad para trabajo en equipo, además de proponer y desarrollar soluciones eficientes y escalables que son integradas a los aplicativos para una mayor experiencia de usuario. Siempre con la disponibilidad para aprender algo nuevo cada día y abierto a las nuevas experiencias.
               </p>
             </article> 
             <article>
@@ -69,7 +68,6 @@ export default function Home() {
         <section>
           <ProjectsComponent />
         </section>
-        {/* <CvComponent /> */}
         <SkillsComponent />
         <AboutComponent />
       </main>
