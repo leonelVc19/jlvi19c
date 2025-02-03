@@ -158,6 +158,9 @@
     text-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 707px) {
+    .photo {
+        width: 100%;
+    }
     .texts {
         width: 100%;
     }
