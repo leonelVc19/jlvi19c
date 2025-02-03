@@ -34,10 +34,11 @@
 }
 .texts_justify {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
-.photo{ 
+.photo{
+    width: 50%;
     position: relative;
     z-index: 1;
     display: flex;
@@ -146,12 +147,13 @@
 }
 
 .description {
+    
     display: flex;
     justify-content: center;
-    width: 60%;
     padding: 1.4rem;
 }
 .description p {
+    font-size: 1rem;
     text-align:  justify;
     text-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
 }
@@ -172,6 +174,7 @@
     .texts_justify {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
     .imagen {

@@ -6,13 +6,10 @@
     background-image: url('../../public/laptop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:bottom 0px right 0px ;
-
+    background-position: bottom 0px right 0px ;
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
-
 }
 .footer_container {
   width: 100%;
@@ -25,7 +22,6 @@
 .footer_container_logo {
   display: block;
   justify-content: space-around;
-
 }
 .footer_logo_img {
   transition: all ease-in-out 0.2s;
@@ -115,7 +111,12 @@
 @media (max-width: 707px) {
   .footer_container {
     flex-wrap: wrap;
-   
+  }
+  .footer_container_logo {
+    width: 100vw;
+  }
+  .footer_social {
+    width: 100vw;
   }
   .footer_content {
     padding: 5px;

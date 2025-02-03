@@ -1,7 +1,7 @@
 /* card styles */
 /* Estilos para la card */
 .card {
-  width: 350px;
+  width: 290px;
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
@@ -16,15 +16,15 @@
 }
 .card_img {
   width: 100%;
-  height: 24vh;
+  height: 20vh;
   object-fit: cover;
 }
 .card_content {
-  height: 25vh;
-  padding: 15px;
+  height: auto;
+  padding: 12px;
 }
 .card_title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 10px 0;
   color: #333;
 }
@@ -32,26 +32,37 @@
   font-size: 1rem;
   color: #777;
   margin-bottom: 15px;
+  text-align: justify;
 }
 .card_link {
+  bottom: 10px;
+  left: 11px;
+  font-size: 1rem;
+  position: absolute;
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
-  pointer-events: none; 
+  pointer-events: none;
 }
-.card_link:hover {
-  text-decoration: underline;
-  color: red;
-}
+
 .card_link_url {
-  text-decoration: none;
   color: #007bff;
+  bottom: 10px;
+  left: 11px;
+  position: absolute;
+  font-size: 1rem;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer; 
+  cursor: pointer;
 }
+
 .card_link_url:hover {
   text-decoration: underline;
   color: red;
+}
+.card_content {
+  position: relative; /* Asegura que los elementos internos con 'absolute' se posicionen en base a esta caja */
+  padding-bottom: 40px; /* Espacio extra para el enlace */
 }
 .content_skills {
   display: flex;
@@ -60,13 +71,13 @@
   align-items: center;
 }
 .skill {
+  font-size: 0.9rem;
   color: #ffffff;
   background: #0088ff;
   border-radius: 5px;
-  margin: 1px;
-  padding: 4px;
+  margin: 0.09rem;
+  padding: 5px;
   transition: all 0.2s ease-in-out;
-
 }
 .skill:hover {
   background: #004c8f;
@@ -74,5 +85,7 @@
   transform: translateY(-3.1px);
   transition: ease-in-out 0.2s;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.36);
-
+}
+.card_link_p {
+  font-size: 1rem;
 }

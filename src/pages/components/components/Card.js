@@ -30,9 +30,8 @@ function Card ({ title, image, skills = [], decripcion, url }) {
                         })  
                     }
                 </div>
-                <br></br>
                 <a href={url} target='_black' className={ url != '' ? styles.card_link_url : styles.card_link}>
-                    { url != '' ? 'Ver proyecto' : 'JLVI'}
+                    <p className={styles.card_link_p}>{ url != '' ? 'Ver proyecto' : 'JLVI'}</p>
                 </a>
             </div>
         </article>

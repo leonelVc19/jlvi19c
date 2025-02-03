@@ -22,22 +22,18 @@ export const projects = [
         title: "JLVI",
         url_project: '/',
         decripcion: "La creación de este sitio web, con la principal finalidad de dar a conocer mis conocimientos y habilidades que poco a poco se van mejorando. Además, este sitio está construido totalmente en NextJS.",
-        image_principal: '',
+        image_principal: 'https://jlvi-iglesias.s3.us-west-1.amazonaws.com/img_projects/home_page.jpg',
         images: ['img_projects/home_page.jpg', 'img_projects/my_projects.jpg'],
-        skills: [
-            
-        ]
+        skills: [ 'NextJS', 'JS', 'CSS', 'HTML', 'Figma']
     },
     {
         id: 4,
         title: "e-stars",
-        url_project: 'https://test-e-stars.vercel.app/',
+        url_project: 'https://test-e-stars.vercel.app/windows/e_stars',
         decripcion: "Proyecto de NFTs.",
         image_principal: '',
         images: [],
-        skills: [
-            
-        ]
+        skills: [ 'NextJS', 'JS', 'CSS', 'Wallet Connect', 'MetaMask', 'Bootstrap', 'NodeJS', 'Express', 'MySQL', 'S3']
     },
     {
         id: 5,
@@ -46,8 +42,6 @@ export const projects = [
         decripcion: "Mi CV en un proyecto web en Astro intuitivo",
         image_principal: '',
         images: [],
-        skills: [
-            
-        ]
+        skills: ['JS', 'Astro', 'CSS', 'HTML']
     }
 ];
