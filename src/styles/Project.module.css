@@ -10,11 +10,12 @@
 }
 .center_header {
   margin-bottom: 1.4rem;
-  backdrop-filter: blur(900px);
+  backdrop-filter: blur(20px);
   border: 1px solid #444;
   padding: 0.4rem;
   border-radius: 10px;
   width: 90vw;
+  
 }
 .center_header_h1{
   font-size: 1.5rem;
