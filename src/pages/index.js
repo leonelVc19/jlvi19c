@@ -65,6 +65,8 @@ export default function Home() {
             />
           </article>
         </section>
+        <br></br>
+        <br></br><br></br>
         <section>
           <ProjectsComponent />
         </section>

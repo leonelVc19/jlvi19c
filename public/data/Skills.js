@@ -8,7 +8,7 @@ export const skills = [
     {
         id:1,
         title: 'HTML',
-        imagen: 'https://lenguajehtml.com/html/logo.svg',
+        imagen: '/iconSkills/html-5.png',
         url: 'https://developer.mozilla.org/en-US/docs/Web/html'
     },{
         id:2,
@@ -33,7 +33,6 @@ export const skills = [
         title: 'Git',
         imagen: '/iconSkills/git.png',
         url: 'https://git-scm.com/'
-
     },
     {
         id:6,
@@ -64,7 +63,6 @@ export const skills = [
         title: 'Lit',
         imagen: '/iconSkills/lit.svg',
         url: 'https://lit.dev/docs/'
-
     },
     {
         id:11,
@@ -75,14 +73,14 @@ export const skills = [
     {
         id:12,
         title: 'SASS',
-        imagen: 'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg',
+        imagen: 'https://sass-lang.com/assets/img/logos/logo.svg',
         url: 'https://sass-lang.com/documentation/'
 
     },
     {
         id:13,
         title: 'Firebase',
-        imagen: 'https://www.gstatic.com/devrel-devsite/prod/v07c44c7c1b3fe607b0ea91e300f4cf82edbe2da6334f7664661c6358babdf558/firebase/images/lockup.svg',
+        imagen: '/iconSkills/firebase_64dp.png',
         url: 'https://firebase.google.com/docs'
     },
     {
