@@ -1,98 +1,44 @@
 export const skills = [
-    {
-        id:0,
-        title: 'JavaScript',
-        imagen: '/iconSkills/javascript.svg',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-    },
-    {
-        id:1,
-        title: 'HTML',
-        imagen: '/iconSkills/html-5.png',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/html'
-    },{
-        id:2,
-        title: 'CSS',
-        imagen: '/iconSkills/css-3.png',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/css'
-    },
-    {
-        id:3,
-        title: 'Nodejs',
-        imagen: 'https://nodejs.org/static/images/logo.svg',
-        url: 'https://nodejs.org/en/docs'
-    },
-    {
-        id:4,
-        title: 'Express',
-        imagen: '/iconSkills/expressjs.svg',
-        url: 'https://expressjs.com/en/starter/installing.html'
-    },
-    {
-        id:5,
-        title: 'Git',
-        imagen: '/iconSkills/git.png',
-        url: 'https://git-scm.com/'
-    },
-    {
-        id:6,
-        title: 'Git Hub',
-        imagen: '/icons/github.png',
-        url: 'https://github.com/leonelVc19'
-    },
-    {
-        id:7,
-        title: 'React',
-        imagen: '/iconSkills/react.svg',
-        url: 'https://react.dev/learn'
-    },
-    {
-        id:8,
-        title: 'React N.',
-        imagen: '/iconSkills/react.svg',
-        url: 'https://reactnative.dev/'
-    },
-    {
-        id:9,
-        title: 'Expo',
-        imagen: '/iconSkills/logo-wordmark.svg',
-        url: 'https://docs.expo.dev/'
-    },
-    {
-        id:10,
-        title: 'Lit',
-        imagen: '/iconSkills/lit.svg',
-        url: 'https://lit.dev/docs/'
-    },
-    {
-        id:11,
-        title: 'Next JS',
-        imagen: '/iconSkills/next.svg',
-        url: 'https://developer.mozilla.org/en-US/docs/Web/html'
-    },
-    {
-        id:12,
-        title: 'SASS',
-        imagen: 'https://sass-lang.com/assets/img/logos/logo.svg',
-        url: 'https://sass-lang.com/documentation/'
+    {title: 'JavaScript', imagen: '/iconSkills/javascript.svg', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    {title: 'PHP', imagen: '', url: 'https://www.php.net/docs.php' },
+    { title: 'NodeJS', imagen: 'https://nodejs.org/static/images/logo.svg', url: 'https://nodejs.org/en/docs' },
+    { title: 'Express', imagen: '/iconSkills/expressjs.svg', url: 'https://expressjs.com/en/starter/installing.html' },
+    {title: 'TypeScript', imagen: '', url: 'https://www.typescriptlang.org/docs/' },
+    {title: 'Lit Element', imagen: '/iconSkills/lit.svg', url: 'https://lit.dev/docs/' },
+    {title: 'Angular', imagen: '', url: 'https://angular.dev/' },
+    {title: 'Angular Material', imagen: '', url: 'https://material.angular.io/' },
+    { title: 'CodeIgniter 4', imagen: '', url: 'https://codeigniter.com/user_guide/' },
+    { title: 'Astro', imagen: '', url: 'https://codeigniter.com/user_guide/' },
+    {title: 'HTML', imagen: '/iconSkills/html-5.png', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+    {title: 'CSS', imagen: '/iconSkills/css-3.png', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+    {title: 'React', imagen: '/iconSkills/react.svg', url: 'https://react.dev/learn' },
+    {title: 'NextJS', imagen: '/iconSkills/next.svg', url: 'https://nextjs.org/docs' },
+    {title: 'React Native', imagen: '/iconSkills/react.svg', url: 'https://reactnative.dev/' },
+    {title: 'Expo', imagen: '/iconSkills/logo-wordmark.svg', url: 'https://docs.expo.dev/' },
+    { title: 'Firebase', imagen: '/iconSkills/firebase_64dp.png', url: 'https://firebase.google.com/docs/auth' },
+    { title: 'MUI', imagen: '', url: 'https://mui.com/material-ui/getting-started/overview/' },
+    { title: 'Bootstrap', imagen: '', url: 'https://getbootstrap.com/docs/' },
+    { title: 'Bootswatch', imagen: '', url: 'https://bootswatch.com/' },
+    { title: 'SASS', imagen: 'https://sass-lang.com/assets/img/logos/logo.svg', url: 'https://sass-lang.com/documentation/' },
+    { title: 'Git', imagen: '/iconSkills/git.png', url: 'https://git-scm.com/' },
+    { title: 'VSS', imagen: '', url: 'https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe' },
+    { title: 'GitHub', imagen: '/icons/github.png', url: 'https://github.com/' },
+    { title: 'GitLab', imagen: '', url: 'https://gitlab.com/' },
+    { title: 'bitbucket', imagen: '', url: 'https://bitbucket.org/product/' },
+    { title: 'Sequelize', imagen: '', url: 'https://sequelize.org/docs/v6/' },
+    { title: 'Docker', imagen: '', url: 'https://docs.docker.com/' },
+    { title: 'SQL', imagen: '', url: 'https://www.w3schools.com/sql/' },
+    { title: 'MongoDB', imagen: '', url: 'https://www.mongodb.com/nosql-explained' },
+    { title: 'MySQL', imagen: '/iconSkills/mysql.svg', url: 'https://dev.mysql.com/doc/' },
+    { title: 'PostgreSQL', imagen: '', url: 'https://www.postgresql.org/docs/' },
+    { title: 'Jira', imagen: '', url: 'https://www.atlassian.com/software/jira' },
+    { title: 'Confluence', imagen: '', url: 'https://www.atlassian.com/software/confluence' },
+    { title: 'Scrum', imagen: '', url: 'https://www.scrum.org/' },
+    { title: 'Figma', imagen: '', url: 'https://www.figma.com/' },
+    { title: 'Windows Server 12|19', imagen: '', url: 'https://learn.microsoft.com/en-us/windows-server/' },
+    { title: 'Linux', imagen: '', url: 'https://ubuntu.com/' },
+    { title: 'Mac OS', imagen: '', url: 'https://www.apple.com/macos/' },
+    { title: 'Edify', imagen: '', url: '#' },
+    { title: 'Archivos Bat, PS1 y SH', imagen: '', url: '#' },
 
-    },
-    {
-        id:13,
-        title: 'Firebase',
-        imagen: '/iconSkills/firebase_64dp.png',
-        url: 'https://firebase.google.com/docs'
-    },
-    {
-        id:14,
-        title: 'MySQL',
-        imagen: '/iconSkills/mysql.svg',
-        url: 'https://dev.mysql.com/doc/'
-    },
-    {
-        id:14,
-        title: 'S3 AWS',
-        imagen: '/iconSkills/s3.png',
-        url: 'https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html'
-    },
 ]
