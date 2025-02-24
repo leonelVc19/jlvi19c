@@ -42,7 +42,7 @@ function Footer() {
                 </section>
                 <article>
                     <h2>Contacto directo</h2>
-                    <a className={styles.footer_link} href="https://wa.me/522431219195?text=Hola+Juan+Leonel+:3l%21" target='_blank' >+52 243-121-9195</a>
+                    <a className={styles.footer_link} href="https://wa.me/522431219195?text=Hola+Juan+Leonel+:3l%21" target='_blank' >+52 243 103 7240</a>
                 </article>
             </section>
             <section>    

@@ -12,7 +12,7 @@ export const socialNetworks = [
     {
         titulo: "Whatsapp",
         imagen: "/icons/whatsapp.png",
-        url: "https://wa.me/522431219195?text=Hola+Juan+Leonel+JLVI%21" 
+        url: "https://wa.me/+522431037240?text=Hola+Juan+Leonel+JLVI%21" 
     },
     {
         titulo: "Email",
