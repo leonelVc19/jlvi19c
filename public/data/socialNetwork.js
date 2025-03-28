@@ -17,6 +17,6 @@ export const socialNetworks = [
     {
         titulo: "Email",
         imagen: "/icons/gmail.png",
-        url: "mailto: vazquez.juan.1fm@gmail.com" 
+        url: "mailto:vazquez.juan.1fm@gmail.com?subject=Contacto_JVLI&body=Body%20of%20the%20email" 
     },
 ]
