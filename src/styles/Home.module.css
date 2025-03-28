@@ -5,20 +5,21 @@
   align-items: center;
   height: auto;
   font-family: var(--font-mono);
+
 }
 
 .main_presentation{
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  width: 100vw;
-  height: 100vh;
   background-image: url('../../public/development2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden; 
 }
 .main_presentation_text{
   width: 60%;
@@ -145,6 +146,8 @@
 }
 .logo:hover {
   transform: scale(1.1);
+  filter: drop-shadow(0 4px 3px rgb(175, 183, 185));
+
 }
 .informacion_cv {
   display: flex;
@@ -154,10 +157,28 @@
   gap: 15px;
 }
 
-.informacion_cv_text{
-  font-size: 1.4rem;
-  width: 33.7ch;
-  filter: drop-shadow( 0 2px 3px rgb(92, 92, 92));
+.informacion_hola{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.informacion_soy {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: rgb(58, 186, 236);
+  filter: drop-shadow( 0 2px 3px rgb(0, 0, 0));
+}
+.informacion_nombre{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.informacion_puesto{
+  text-transform: uppercase;
+
+}
+.contact_information{
+  display: flex;
+  gap: 1rem;
 }
 /*Keyframe to text machine* */
 @keyframes typing {
@@ -190,12 +211,14 @@
 @media (max-width: 700px) {
 
   .main_presentation {
-    height: auto;
-    width: 100vw;
+    min-height: calc(100vh - 80px); /* Resta la altura del header */
+    width: 100%;
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 80px; 
   }
   .center {
     width: auto;
@@ -278,6 +301,9 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+  .contact_information {
+    flex-direction: column;
   }
 }
 

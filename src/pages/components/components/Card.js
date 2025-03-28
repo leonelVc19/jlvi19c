@@ -21,13 +21,8 @@ function Card ({ title, image, skills = [], decripcion, url }) {
                         ? 
                             <p style={{color:'#000'}}>No Skills</p> 
                         : 
-                        skills.map((skill, index) => {
-                            return ( 
-                                <> 
-                                    <span key={index} className={styles.skill}>{skill}</span> 
-                                </>
-                            )
-                        })  
+                        skills.map((skill, index) => ( <span key={index } className={styles.skill}>{skill}</span> )
+                        )  
                     }
                 </div>
                 <a href={url} target='_black' className={ url != '' ? styles.card_link_url : styles.card_link}>

@@ -9,7 +9,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: domain
+        hostname: 'jlvi-iglesias.s3.us-west-1.amazonaws.com'
       }
     ],
     minimumCacheTTL: 1500000,

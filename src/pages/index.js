@@ -4,16 +4,19 @@ import dynamic from 'next/dynamic';
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import "./NavBar/nav";
-import "./Footer/footer";
+import Footer from './Footer/footer';
+import NavBar from './NavBar/nav';
+
 const SkillsComponent = dynamic(() => import('./components/skills/skill.js'));
-const CvComponent =     dynamic(() => import('./components/mycv/juan_cv.js'));
 const ContactComponent = dynamic(() => import('./components/ContactComponent.js'));
 const AboutComponent =   dynamic(() => import('./components/about/about.js'));
 const ProjectsComponent = dynamic(() => import('./components/projects/project.js'));
+const ContactaMeComponent = dynamic(() => import('./components/contact/index.js'));
+const ExperienciaComponent = dynamic(() => import('./components/experiencia/index.js'));
+import ButtonLink from "./components/components/Button";
 
 
 export default function Home() {
-  console.log('Handling scroll event');
   return (
     <>
       <Head>
@@ -36,42 +39,45 @@ export default function Home() {
         <meta name="twitter:image" content=""/>
         <link rel="icon" href="/JLVI19C.svg"/>
       </Head>
-      <main className={styles.main}>
+      <NavBar />
+      <main className={styles.main} id="home">
         <section className={styles.main_presentation}>
           <article className={styles.main_presentation_text}>
-            <h1 className={styles.informacion_cv_text}>
-              Hola, Soy Juan Leonel Vazquez Iglesias
-            </h1>
+            <h1 className={styles.informacion_hola}> Hola,</h1>
+            <h1 className={styles.informacion_nombre}>Soy, <span className={styles.informacion_soy}>Leonel Iglesias</span> .</h1>
+
+            <h1 className={styles.informacion_puesto}> Software Developer | Ing. Desarrollo y Gestión de Software</h1>
             <article className={styles.text_main}> 
-              <h3>Ingeniero en Desarrollo y Gestión Software</h3>
-              <hr></hr>
-              <p className={styles.text_main_description}>  
-              Apasionado por el mundo de la tecnología y desarrollo de software, cuento con experiencia en desarrollo web, FullStack y aplicaciones móviles. Me caracterizo por ser autodidacta y estar en constante aprendizaje de nuevas tecnologías día a día, así mismo contando con una gran habilidad para trabajo en equipo, además de proponer y desarrollar soluciones eficientes y escalables que son integradas a los aplicativos para una mayor experiencia de usuario. Siempre con la disponibilidad para aprender algo nuevo cada día y abierto a las nuevas experiencias.
-              </p>
+              <p className={styles.text_main_description}>Desarrollador FullStack apasionado por la tecnología, con experiencia en desarrollo web y móvil. Autodidacta, orientado al aprendizaje continuo y trabajo en equipo. Enfocado en crear soluciones eficientes y escalables para mejorar la experiencia de usuario.</p>
             </article> 
-            <article>
+            <article className={styles.contact_information}>
               <ContactComponent />
+              <ButtonLink
+                title="Descargar CV"
+                link="https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan+Leonel+Vazquez+Iglesias+CV.pdf"
+                tart="_blank"
+              />
             </article>
           </article>
           <article className={styles.center}>
             <Image
               className={styles.logo}
-              src='https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan_Leonel_Vazquez_Iglesias.jpeg'
-              alt='Juan Iglesias'
-              width={240}
+              src="/JLVI19C.svg"
+              alt="JLVI19C"
+              width={360}
               height={360}
               layout="cover"
               loading="lazy"
             />
           </article>
         </section>
-        <br></br>
-        <br></br><br></br>
+        <AboutComponent />
+        <SkillsComponent />
+        <ExperienciaComponent />
         <section>
           <ProjectsComponent />
         </section>
-        <SkillsComponent />
-        <AboutComponent />
+        <Footer />
       </main>
     </>
   );
