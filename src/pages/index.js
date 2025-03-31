@@ -44,7 +44,7 @@ export default function Home() {
         <section className={styles.main_presentation}>
           <article className={styles.main_presentation_text}>
             <h1 className={styles.informacion_hola}> Hola,</h1>
-            <h1 className={styles.informacion_nombre}>Soy, <span className={styles.informacion_soy}>Leonel Iglesias</span> .</h1>
+            <h1 className={styles.informacion_nombre}>Soy, <span className={styles.informacion_soy}>Juan Iglesias</span> .</h1>
 
             <h1 className={styles.informacion_puesto}> Software Developer | Ing. Desarrollo y Gestión de Software</h1>
             <article className={styles.text_main}> 
