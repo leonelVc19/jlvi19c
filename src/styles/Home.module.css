@@ -12,19 +12,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../../public/development2.jpg');
+  background-image: url('../../public/estrellas.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 2rem;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
+  box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 3.5);
 }
 .main_presentation_text{
-  width: 60%;
-  backdrop-filter: blur(90px);
-  border: 1px solid #444;
+  min-width: 50%;
+  width: 50vw;
+  backdrop-filter: blur(2px);
+  border: 1px solid #ffffff90;
   padding: 1rem;
   border-radius: 10px;
   z-index: 10;

@@ -44,11 +44,11 @@ export default function Home() {
         <section className={styles.main_presentation}>
           <article className={styles.main_presentation_text}>
             <h1 className={styles.informacion_hola}> Hola,</h1>
-            <h1 className={styles.informacion_nombre}>Soy, <span className={styles.informacion_soy}>Juan Iglesias</span> .</h1>
+            <h1 className={styles.informacion_nombre}>Soy, <span className={styles.informacion_soy}>Juan Iglesias</span>.</h1>
 
             <h1 className={styles.informacion_puesto}> Software Developer | Ing. Desarrollo y Gestión de Software</h1>
             <article className={styles.text_main}> 
-              <p className={styles.text_main_description}>Desarrollador FullStack apasionado por la tecnología, con experiencia en desarrollo web y móvil. Autodidacta, orientado al aprendizaje continuo y trabajo en equipo. Enfocado en crear soluciones eficientes y escalables para mejorar la experiencia de usuario.</p>
+              <p className={styles.text_main_description}>Cuanta con 2 años de experiencia en desarrollo web y móvil. Asi mismo cuenta con experiencia como desarrollador backend para el sector bancario en CDMX. Autodidacta, orientado al aprendizaje continuo y trabajo en equipo. Enfocado en crear soluciones eficientes y escalables para mejorar la experiencia de usuario.</p>
             </article> 
             <article className={styles.contact_information}>
               <ContactComponent />
@@ -71,9 +71,9 @@ export default function Home() {
             />
           </article>
         </section>
+        <ExperienciaComponent />
         <AboutComponent />
         <SkillsComponent />
-        <ExperienciaComponent />
         <section>
           <ProjectsComponent />
         </section>

@@ -28,8 +28,8 @@ function Footer() {
                 </article> */}
             </section>
             <section>    
-                <span className={styles.footer_copy}>Portafolio &#169; 
-                    <strong className={styles.footer_copy_name}>Juan Leonel Vazquez Iglesias</strong> 
+                <span className={styles.footer_copy}>Portafolio 
+                    <strong className={styles.footer_copy_name}> Juan Leonel Vazquez Iglesias</strong> 
                 </span>
                 <br/>
             </section>
