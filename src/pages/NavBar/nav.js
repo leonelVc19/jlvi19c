@@ -36,14 +36,6 @@ function NavBar() {
                     <Link href="#experiencia" className={styles.nav_link} >Experiencia</Link>
                     <Link href="#proyectos" className={styles.nav_link}>Portaforlio</Link>
                     {/* <Link href="#contacta_me" className={styles.nav_link} title="Skills ">Contacto</Link> */}
-               {/* <ButtonLink
-                    title="Descargar CV"
-                    link="https://jlvi-iglesias.s3.us-west-1.amazonaws.com/Juan+Leonel+Vazquez+Iglesias+CV.pdf"
-                    tart="_blank"
-                >
-                </ButtonLink> */}
-
-
             </nav>
         </header>
     );

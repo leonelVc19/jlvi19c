@@ -43,10 +43,10 @@
     transition: 0.2s ease-in-out;
     filter: drop-shadow(0 2px 4px rgb(0, 0, 0));
     font-size: 1.18rem;
+    color: linear-gradient(45deg, #0195ff, #0ee7fa);
 }
 
 .nav_link:hover {
-    color: rgb(41, 166, 255);
     transform: scale(1.06);
     transition: 0.2s ease-in-out;
     filter: drop-shadow(1px 1px 3px #6c6c6c);
