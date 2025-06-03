@@ -3,7 +3,7 @@ export const experienciaPersonal = [
         id: 1,
         title: "BACKEND ENGINEERING CONSULTANT",
         company: "Motivus",
-        duration: "oct. 2024 - actualidad · 6 meses",
+        duration: "oct. 2024 - abr. 2025 · 7 meses",
         location: "Ciudad de México, México · En remoto",
         description: "Backend Developer para el cliente del sector bancario en la CDMX, realizando la solución de INC, trabajando con lenguajes como Edify, JavaScript, BAT, SH, con herramientas como Jira, Confluence, VSS, ServiceNow y servidores Red Hat Enterprise Linux."
     },
@@ -30,5 +30,5 @@ export const experienciaPersonal = [
         duration: "ene. 2023 - abr. 2023 · 4 meses",
         location: "Ciudad de México, México · En remoto",
         description: "Desarrollo de un sistema de administración de perfiles de candidatos para RH con LitElement, JS, NodeJS, Sequelize, MySQL, Git, GitHub, incluyendo carga de archivos PDF de CVs."
-    }
+    },
 ];
