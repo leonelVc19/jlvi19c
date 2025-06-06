@@ -20,7 +20,7 @@ function Footer() {
                         />
                     </Link>
                     <h1 className={styles.title}>Contacto</h1>
-                    <Link className={styles.footer_link} href="https://wa.me/522431037240?text=Hola+Juan+Leonel+:3l%21" target='_blank' >+52 243 103 7240</Link>
+                    <Link className={styles.footer_link} href="https://wa.me/522431219195?text=Hola+Juan+Leonel+:3l%21" target='_blank' >+52 243 121 9195</Link>
                     { <Contact /> }
                 </article>
                 {/* <article>
